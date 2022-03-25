@@ -16,9 +16,95 @@
     text-decoration: none;
   }
 
+  p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
   .entête {
     display: flex;
     align-items: center;
+  }
+
+  .ohmyfood {
+    padding-left: 80px;
+  }
+
+  .fa-solid {
+    padding-left: 10px;
+    color: black;
+  }
+
+  .imgalf {
+    background-image: url("../images./restaurants./3.jpg");
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .heart {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .fa-heart {
+    font-size: 20px;
+  }
+
+  .Entrées {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #F2F2F2;
+  }
+
+  h3 {
+    margin: 0px;
+    font-size: 17px;
+  }
+
+  .e1 {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+
+  .e2 {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+
+  .e3 {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+
+  .E1 {
+    margin: 10px;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+  }
+
+  .E2 {
+    margin: 10px;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+  }
+
+  .E3 {
+    margin: 10px;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
   }
 }
 
