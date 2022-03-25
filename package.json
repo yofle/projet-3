@@ -5,8 +5,15 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/style.css",
-    "prefix":"postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
-
+    "sass1": "sass --watch ./sass/main_enchantée.scss:./css/style_enchantée.css",
+    "sass2": "sass --watch ./sass/main_française.scss:./css/style_française.css",
+    "sass3": "sass --watch ./sass/main_goût.scss:./css/style_goût.css",
+    "sass4": "sass --watch ./sass/main_sens.scss:./css/style_sens.css",
+    "prefix":"postcss ./css/style.css --use autoprefixer -d ./css/prefixed/",
+    "prefix1":"postcss ./css/style_enchantée.css --use autoprefixer -d ./css/prefixed/",
+    "prefix2":"postcss ./css/style_française.css --use autoprefixer -d ./css/prefixed/",
+    "prefix3":"postcss ./css/style_goût.css --use autoprefixer -d ./css/prefixed/",
+    "prefix4":"postcss ./css/style_sens.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
