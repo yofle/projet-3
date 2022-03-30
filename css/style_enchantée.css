@@ -9,7 +9,17 @@
     src: url("./css/Shrikhand/Shrikhand-Regular.ttf") format(".ttf");
   }
   html {
-    font-family: "Roboto", "Arial";
+    font-family: "Shrikhand", "Roboto", "Arial";
+  }
+
+  body {
+    margin: 0;
+  }
+
+  nav {
+    background-color: #F2F2F2;
+    padding-bottom: 30px;
+    border-radius: 40px 40px 0px 0px;
   }
 
   a:link {
@@ -17,41 +27,285 @@
   }
 
   p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .entête {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-top: 10px;
+  }
+
+  .ohmyfood {
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .fa-solid {
+    padding-left: 10px;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .imglne {
+    background-image: url("../images./restaurants./2.jpg");
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .bigHeart {
+    position: relative;
+    margin-top: -70px;
+  }
+
+  .heart {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #F2F2F2;
+    border-radius: 40px 40px 0px 0px;
+  }
+
+  .fa-heart {
+    font-size: 20px;
+  }
+
+  h1 {
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+
+  .Entrées {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #F2F2F2;
+  }
+
+  .Entrées h2::after {
+    content: "";
+    position: absolute;
+    top: 25rem;
+    left: 0.7rem;
+    height: 0.2rem;
+    width: 2.5rem;
+    background-color: #99E2D0;
+  }
+
+  .Plats h2::after {
+    content: "";
+    position: absolute;
+    top: 45.5rem;
+    left: 0.7rem;
+    height: 0.2rem;
+    width: 2.5rem;
+    background-color: #99E2D0;
+  }
+
+  .Desserts h2::after {
+    content: "";
+    position: absolute;
+    top: 62rem;
+    left: 0.7rem;
+    height: 0.2rem;
+    width: 2.5rem;
+    background-color: #99E2D0;
+  }
+
+  h2 {
+    font-size: 15px;
+    font-weight: 100;
+    padding-left: 10px;
+  }
+
+  h3 {
+    margin: 0px;
     font-size: 15px;
   }
 
-  .logoomf {
-    text-align: center;
-  }
-
-  .localisation {
+  .e1 {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
-    background-color: #e7e5e5;
+    font-size: 15px;
+    justify-content: space-between;
   }
 
-  .fa-map-marker-alt {
-    padding-right: 20px;
+  .e2 {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
   }
 
-  .Explorer {
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: #f5f1f1;
-    padding-top: 5%;
-    padding-bottom: 5%;
+  .e3 {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
   }
 
-  .Explorer h1 {
-    text-align: center;
+  .e4 {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
   }
 
-  .Explorer p {
-    text-align: center;
+  .E1 {
+    margin: 10px;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    padding-right: 15px;
+    box-shadow: 3px 3px 3px #cdd4dd;
   }
 
-  .bouton1 {
+  .E2 {
+    margin: 10px;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    padding-right: 15px;
+    box-shadow: 3px 3px 3px #cdd4dd;
+  }
+
+  .E3 {
+    margin: 10px;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    padding-right: 15px;
+    box-shadow: 3px 3px 3px #cdd4dd;
+  }
+
+  .E4 {
+    margin: 10px;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    padding-right: 15px;
+    box-shadow: 3px 3px 3px #cdd4dd;
+  }
+
+  .Plats {
+    padding-bottom: 20px;
+    background-color: #F2F2F2;
+  }
+
+  .p1 {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+
+  .p2 {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+
+  .p3 {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+
+  .P1 {
+    margin: 10px;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    padding-right: 15px;
+    box-shadow: 3px 3px 3px #cdd4dd;
+  }
+
+  .P2 {
+    margin: 10px;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    padding-right: 15px;
+    box-shadow: 3px 3px 3px #cdd4dd;
+  }
+
+  .P3 {
+    margin: 10px;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    padding-right: 15px;
+    box-shadow: 3px 3px 3px #cdd4dd;
+  }
+
+  .Desserts {
+    padding-bottom: 20px;
+    background-color: #F2F2F2;
+  }
+
+  .d1 {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+
+  .d2 {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+
+  .d3 {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+
+  .D1 {
+    margin: 10px;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    padding-right: 15px;
+    box-shadow: 3px 3px 3px #cdd4dd;
+  }
+
+  .D2 {
+    margin: 10px;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    padding-right: 15px;
+    box-shadow: 3px 3px 3px #cdd4dd;
+  }
+
+  .D3 {
+    margin: 10px;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    padding-right: 15px;
+    box-shadow: 3px 3px 3px #cdd4dd;
+  }
+
+  .prix {
+    font-weight: bold;
+    opacity: 0.8;
+  }
+
+  .bouton2 {
     border: 1px solid #9356DC;
     border-radius: 20px 20px;
     color: white;
@@ -59,171 +313,11 @@
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 3px 3px 3px 3px #cdd4dd;
-    opacity: 0.8;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-
-  .Fonctionnement {
-    margin-left: 3%;
-    margin-right: 3%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .Choisir {
-    display: flex;
-    align-items: baseline;
-    border: 1px solid #f5f1f1;
-    border-radius: 20px 20px;
-    background-color: #f5f1f1;
-    box-shadow: 3px 3px 3px 3px #cdd4dd;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-
-  .fa-mobile-alt {
-    padding-right: 25px;
-    padding-left: 25px;
-    opacity: 0.5;
-  }
-
-  .Composez {
-    display: flex;
-    align-items: baseline;
-    border: 1px solid #f5f1f1;
-    border-radius: 20px 20px;
-    background-color: #f5f1f1;
-    box-shadow: 3px 3px 3px 3px #cdd4dd;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-
-  .fa-list {
-    padding-right: 25px;
-    padding-left: 25px;
-    opacity: 0.5;
-  }
-
-  .Dégustez {
-    display: flex;
-    align-items: baseline;
-    border: 1px solid #f5f1f1;
-    border-radius: 20px 20px;
-    background-color: #f5f1f1;
-    box-shadow: 3px 3px 3px 3px #cdd4dd;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-
-  .fa-store {
-    padding-right: 25px;
-    padding-left: 25px;
-    opacity: 0.5;
-  }
-
-  .num {
-    border: 1px solid #9356DC;
-    border-radius: 20px 20px;
-    background-color: #9356DC;
-    color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .Restaurants {
-    background-color: #F2F2F2;
-    padding-top: 20px;
-    padding-bottom: 30px;
-  }
-
-  .Restaurants h3 {
-    color: black;
-    margin-bottom: 0px;
-    font-size: 17px;
-  }
-
-  .Restaurants p {
-    color: black;
-    margin-top: 0px;
-    padding-left: 10px;
-  }
-
-  .coeur {
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 20px;
-    font-size: 20px;
-  }
-
-  .img1 {
-    background-image: url("../images./restaurants./1.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 170px;
-    border-radius: 15px 15px 0px 0px;
-    background-position: center;
-  }
-
-  .restau1 {
-    border: 1px #F2F2F2 solid;
-    border-radius: 15px 15px 15px 15px;
-    background-color: white;
-    margin: 10px;
-  }
-
-  .img2 {
-    background-image: url("../images./restaurants./2.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 170px;
-    border-radius: 15px 15px 0px 0px;
-    background-position: center;
-  }
-
-  .restau2 {
-    border: 1px #F2F2F2 solid;
-    border-radius: 15px 15px 15px 15px;
-    background-color: white;
-    margin: 10px;
-  }
-
-  .img3 {
-    background-image: url("../images./restaurants./3.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 170px;
-    border-radius: 15px 15px 0px 0px;
-    background-position: center;
-  }
-
-  .restau3 {
-    border: 1px #F2F2F2 solid;
-    border-radius: 15px 15px 15px 15px;
-    background-color: white;
-    margin: 10px;
-  }
-
-  .img4 {
-    background-image: url("../images./restaurants./4.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 170px;
-    border-radius: 15px 15px 0px 0px;
-    background-position: center;
-  }
-
-  .restau4 {
-    border: 1px #F2F2F2 solid;
-    border-radius: 15px 15px 15px 15px;
-    background-color: white;
-    margin: 10px;
+    opacity: 0.9;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    margin-bottom: 50px;
   }
 
   Footer {
@@ -240,8 +334,9 @@
     margin-bottom: 8px;
   }
 
-  .ohmyfood {
-    margin-bottom: 20px;
+  .omf {
+    margin-bottom: 10px;
+    font-weight: bolder;
   }
 
   .fa-utensils {
@@ -264,6 +359,5 @@
     align-items: baseline;
   }
 }
-/*CSS index à la française*/
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style_enchant%C3%A9e.css.map */

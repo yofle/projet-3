@@ -9,7 +9,15 @@
     src: url("./css/Shrikhand/Shrikhand-Regular.ttf") format(".ttf");
   }
   html {
-    font-family: "Roboto", "Arial";
+    font-family:"Shrikhand", "Roboto", "Arial";
+  }
+  body{
+    margin: 0;
+  }
+  nav{
+    background-color: #F2F2F2;
+    padding-bottom: 30px;
+    border-radius: 40px 40px 0px 0px;
   }
 
   a:link {
@@ -18,24 +26,34 @@
   p{
     margin-bottom: 5px;
     margin-top: 5px;
+    font-size: 14px;
   }
 
 .entête{
     display: flex;
     align-items: center;
+    background-color: white;
+    margin-top: 10px;
 }
 .ohmyfood{
   padding-left: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .fa-solid{
   padding-left: 10px;
   color: black;
+  margin-bottom: 10px;
 }
 .imgalf{
   background-image:url("../images./restaurants./3.jpg");
-  height: 200px;
+  height: 300px;
   background-repeat: no-repeat;
   background-size: 100%;
+}
+.bigHeart{
+  position: relative;
+  margin-top: -90px;
 }
 .heart{
   display: flex;
@@ -43,18 +61,56 @@
   justify-content: space-between;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: #F2F2F2;
+  border-radius: 40px 40px 0px 0px;
 }
 .fa-heart{
   font-size: 20px;
+}
+h1{
+  margin-bottom: 0px;
+  margin-top: 30px;
 }
 .Entrées{
   padding-bottom: 20px;
   padding-top: 20px;
   background-color: #F2F2F2;
 }
+.Entrées h2::after{
+  content: "";
+    position: absolute;
+    top: 23.5rem;
+    left: 0.7rem;
+    height: 0.20rem;
+    width: 2.5rem;
+    background-color: #99E2D0;
+}
+.Plats h2::after{
+  content: "";
+    position: absolute;
+    top: 40rem;
+    left: 0.7rem;
+    height: 0.20rem;
+    width: 2.5rem;
+    background-color: #99E2D0;
+}
+.Desserts h2::after{
+  content: "";
+    position: absolute;
+    top: 56.5rem;
+    left: 0.7rem;
+    height: 0.20rem;
+    width: 2.5rem;
+    background-color: #99E2D0;
+}
+h2{
+  font-size: 15px;
+  font-weight: 100;
+  padding-left: 10px;
+}
 h3{
   margin: 0px;
-  font-size: 17px;
+  font-size: 15px;
 }
 .e1{
   display: flex ;
@@ -77,6 +133,8 @@ h3{
   background-color: white;
   border-radius: 10px 10px 10px 10px;
   padding: 5px;
+  padding-right: 15px;
+  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .E2{
   margin: 10px;
@@ -84,6 +142,8 @@ h3{
   background-color: white;
   border-radius: 10px 10px 10px 10px;
   padding: 5px;
+  padding-right: 15px;
+  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .E3{
   margin: 10px;
@@ -91,7 +151,149 @@ h3{
   background-color: white;
   border-radius: 10px 10px 10px 10px;
   padding: 5px;
+  padding-right: 15px;
+  box-shadow: 3px 3px 3px #cdd4dd;
 }
-
-
+.Plats{
+  padding-bottom: 20px;
+  background-color: #F2F2F2;
+}
+.p1{
+  display: flex ;
+  font-size: 15px;
+  justify-content: space-between;
+}
+.p2{
+  display: flex ;
+  font-size: 15px;
+  justify-content: space-between;
+}
+.p3{
+  display: flex ;
+  font-size: 15px;
+  justify-content: space-between;
+}
+.P1{
+  margin: 10px;
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px;
+  padding-right: 15px;
+  box-shadow: 3px 3px 3px #cdd4dd;
+}
+.P2{
+  margin: 10px;
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px;
+  padding-right: 15px;
+  box-shadow: 3px 3px 3px #cdd4dd;
+}
+.P3{
+  margin: 10px;
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px;
+  padding-right: 15px;
+  box-shadow: 3px 3px 3px #cdd4dd;
+}
+.Desserts{
+  padding-bottom: 20px;
+  background-color: #F2F2F2;
+}
+.d1{
+  display: flex ;
+  font-size: 15px;
+  justify-content: space-between;
+}
+.d2{
+  display: flex ;
+  font-size: 15px;
+  justify-content: space-between;
+}
+.d3{
+  display: flex ;
+  font-size: 15px;
+  justify-content: space-between;
+}
+.D1{
+  margin: 10px;
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px;
+  padding-right: 15px;
+  box-shadow: 3px 3px 3px #cdd4dd;
+}
+.D2{
+  margin: 10px;
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px;
+  padding-right: 15px;
+  box-shadow: 3px 3px 3px #cdd4dd;
+}
+.D3{
+  margin: 10px;
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px;
+  padding-right: 15px;
+  box-shadow: 3px 3px 3px #cdd4dd;
+}
+.prix{
+  font-weight: bold;
+  opacity: 0.8;
+}
+.bouton2{
+  border: 1px solid #9356DC ;
+  border-radius: 20px 20px;
+  color: white;
+  background:linear-gradient(0deg,#9356DC , #FF79DA);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 3px 3px 3px 3px #cdd4dd;
+  opacity: 0.9;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+Footer{
+  background-color: black;
+  opacity: 0.8;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+Footer p{
+  color: white;
+  margin-top:0px;
+  margin-bottom: 8px;
+}
+.omf{
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+.fa-utensils{
+  color: white;
+  padding-right: 18px;
+}
+.fa-hands-helping{
+  color: white;
+  padding-right: 12px;
+}
+.main{
+  display: flex;
+  align-items: baseline;
+}
+.couvert{
+  display: flex;
+  align-items: baseline;
+}
 }
