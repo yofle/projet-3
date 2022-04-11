@@ -40,7 +40,7 @@
   }
 
   .ohmyfood {
-    padding-left: 80px;
+    padding-left: 30%;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -101,7 +101,7 @@
   .Plats h2::after {
     content: "";
     position: absolute;
-    top: 40rem;
+    top: 39.8rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -111,7 +111,7 @@
   .Desserts h2::after {
     content: "";
     position: absolute;
-    top: 56.5rem;
+    top: 56.1rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -444,7 +444,7 @@
   .Plats h2::after {
     content: "";
     position: absolute;
-    top: 40rem;
+    top: 39.8rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -454,7 +454,7 @@
   .Desserts h2::after {
     content: "";
     position: absolute;
-    top: 56.5rem;
+    top: 56.1rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -726,7 +726,7 @@
   }
 
   .ohmyfood {
-    padding-left: 80px;
+    padding-left: 40%;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -787,7 +787,7 @@
   .Plats h2::after {
     content: "";
     position: absolute;
-    top: 40rem;
+    top: 39.8rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -797,7 +797,7 @@
   .Desserts h2::after {
     content: "";
     position: absolute;
-    top: 56.5rem;
+    top: 56.1rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;

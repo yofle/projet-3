@@ -40,7 +40,7 @@
   }
 
   .ohmyfood {
-    padding-left: 80px;
+    padding-left: 30%;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -92,7 +92,7 @@
   .Entrées h2::after {
     content: "";
     position: absolute;
-    top: 25rem;
+    top: 22.9rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -102,7 +102,7 @@
   .Plats h2::after {
     content: "";
     position: absolute;
-    top: 41.5rem;
+    top: 39.2rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -112,7 +112,7 @@
   .Desserts h2::after {
     content: "";
     position: absolute;
-    top: 58rem;
+    top: 55.5rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -400,7 +400,7 @@
   }
 
   .ohmyfood {
-    padding-left: 80px;
+    padding-left: 40%;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -452,7 +452,7 @@
   .Entrées h2::after {
     content: "";
     position: absolute;
-    top: 25rem;
+    top: 22.9rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -462,7 +462,7 @@
   .Plats h2::after {
     content: "";
     position: absolute;
-    top: 41.5rem;
+    top: 39.2rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -472,7 +472,7 @@
   .Desserts h2::after {
     content: "";
     position: absolute;
-    top: 58rem;
+    top: 55.6rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -760,7 +760,7 @@
   }
 
   .ohmyfood {
-    padding-left: 80px;
+    padding-left: 45%;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -812,7 +812,7 @@
   .Entrées h2::after {
     content: "";
     position: absolute;
-    top: 25rem;
+    top: 22.9rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -822,7 +822,7 @@
   .Plats h2::after {
     content: "";
     position: absolute;
-    top: 41.5rem;
+    top: 39.2rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -832,7 +832,7 @@
   .Desserts h2::after {
     content: "";
     position: absolute;
-    top: 58rem;
+    top: 55.5rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
