@@ -1,15 +1,8 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @media screen and (max-width: 600px) {
-  @font-face {
-    font-family: "Roboto";
-    src: url("./css/Roboto/Roboto-Black.ttf") format(".ttf") url("./css/Roboto/Roboto-BlackItalic.ttf") format(".ttf") url("./css/Roboto/Roboto-Bold.tff") format(".tff") url("./css/Roboto/Roboto-BoldItalic.ttf") format(".ttf") url("./css/Roboto/Roboto-Italic.ttf") format(".ttf") url("./css/Roboto/Roboto-Light.ttf") format(".ttf");
-  }
-  @font-face {
-    font-family: "Shrikhand";
-    src: url("./css/Shrikhand/Shrikhand-Regular.ttf") format(".ttf");
-  }
   html {
-    font-family:"Shrikhand", "Roboto", "Arial";
+    font-family:"Roboto", "Arial";
   }
   body{
     margin: 0;
@@ -294,6 +287,7 @@ Footer p{
 .omf{
   margin-bottom: 10px;
   font-weight: bolder;
+  font-family:"Shrikhand";
 }
 .fa-utensils{
   color: white;
@@ -314,16 +308,8 @@ Footer p{
 }
 @media screen and (max-width:1023px) and (min-width:601px)
 {
-  @font-face {
-    font-family: "Roboto";
-    src: url("./css/Roboto/Roboto-Black.ttf") format(".ttf") url("./css/Roboto/Roboto-BlackItalic.ttf") format(".ttf") url("./css/Roboto/Roboto-Bold.tff") format(".tff") url("./css/Roboto/Roboto-BoldItalic.ttf") format(".ttf") url("./css/Roboto/Roboto-Italic.ttf") format(".ttf") url("./css/Roboto/Roboto-Light.ttf") format(".ttf");
-  }
-  @font-face {
-    font-family: "Shrikhand";
-    src: url("./css/Shrikhand/Shrikhand-Regular.ttf") format(".ttf");
-  }
   html {
-    font-family:"Shrikhand", "Roboto", "Arial";
+    font-family: "Roboto", "Arial";
   }
   body{
     margin: 0;
@@ -608,6 +594,7 @@ Footer p{
 .omf{
   margin-bottom: 10px;
   font-weight: bolder;
+  font-family:"Shrikhand";
 }
 .fa-utensils{
   color: white;
@@ -628,16 +615,8 @@ Footer p{
 }
 @media screen and (min-width: 1024px)
 {
-  @font-face {
-    font-family: "Roboto";
-    src: url("./css/Roboto/Roboto-Black.ttf") format(".ttf") url("./css/Roboto/Roboto-BlackItalic.ttf") format(".ttf") url("./css/Roboto/Roboto-Bold.tff") format(".tff") url("./css/Roboto/Roboto-BoldItalic.ttf") format(".ttf") url("./css/Roboto/Roboto-Italic.ttf") format(".ttf") url("./css/Roboto/Roboto-Light.ttf") format(".ttf");
-  }
-  @font-face {
-    font-family: "Shrikhand";
-    src: url("./css/Shrikhand/Shrikhand-Regular.ttf") format(".ttf");
-  }
   html {
-    font-family:"Shrikhand", "Roboto", "Arial";
+    font-family:"Roboto", "Arial";
   }
   body{
     margin: 0;
@@ -922,6 +901,7 @@ Footer p{
 .omf{
   margin-bottom: 10px;
   font-weight: bolder;
+  font-family:"Shrikhand";
 }
 .fa-utensils{
   color: white;

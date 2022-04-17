@@ -293,27 +293,13 @@ Footer p{
 }
 @media screen and (max-width:1023px) and (min-width:601px)
 {
-    @font-face
-	{
-		font-family:"Roboto";
-		src: url("./css/Roboto/Roboto-Black.ttf") format(".ttf")
-	  		 url("./css/Roboto/Roboto-BlackItalic.ttf") format(".ttf")
-              url("./css/Roboto/Roboto-Bold.tff") format(".tff")
-              url("./css/Roboto/Roboto-BoldItalic.ttf") format(".ttf")
-              url("./css/Roboto/Roboto-Italic.ttf") format(".ttf")
-              url("./css/Roboto/Roboto-Light.ttf") format(".ttf");
-    }          
-@font-face
-	{   font-family:"Shrikhand";
-		src: url("./css/Shrikhand/Shrikhand-Regular.ttf") format(".ttf");
-    }
     @mixin bfooter {
        background-color: black;
        opacity: 0.8; 
     }
     html
 	{
-		font-family:"Shrikhand" , "Roboto" , "Arial" ;
+		font-family:"Roboto" , "Arial" ;
 	}
     a:link 
     { 
@@ -555,6 +541,7 @@ Footer p{
 }
 .ohmyfood{
     margin-bottom: 20px;
+    font-family: "Shrikhand" ;
 }
 .fa-utensils{
     color: white;
@@ -575,27 +562,13 @@ Footer p{
 }
 @media screen and (min-width: 1024px)
 {
-    @font-face
-	{
-		font-family:"Roboto";
-		src: url("./css/Roboto/Roboto-Black.ttf") format(".ttf")
-	  		 url("./css/Roboto/Roboto-BlackItalic.ttf") format(".ttf")
-              url("./css/Roboto/Roboto-Bold.tff") format(".tff")
-              url("./css/Roboto/Roboto-BoldItalic.ttf") format(".ttf")
-              url("./css/Roboto/Roboto-Italic.ttf") format(".ttf")
-              url("./css/Roboto/Roboto-Light.ttf") format(".ttf");
-    }          
-@font-face
-	{   font-family:"Shrikhand";
-		src: url("./css/Shrikhand/Shrikhand-Regular.ttf") format(".ttf");
-    }
     @mixin bfooter {
        background-color: black;
        opacity: 0.8; 
     }
     html
 	{
-		font-family:"Shrikhand" , "Roboto" , "Arial" ;
+		font-family:"Roboto" , "Arial" ;
 	}
     a:link 
     { 
@@ -816,6 +789,9 @@ Footer p{
     color: white;
     margin-top:0px;
     margin-bottom: 8px;
+}
+.ohmyfood{
+    font-family:"Shrikhand" ,
 }
 
 .fa-utensils{
