@@ -25,13 +25,15 @@ body{
         margin-top: 200px;
         margin-bottom: 100px;
         border: 16px solid white;
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         border-top-color: blue;
         border-bottom-color: red;
         border-radius: 50%;
         animation: chargeur 2s  infinite;
         z-index: 1;
+        position: absolute;
+        margin-left: 28%;
     }
 }
 .delay{
@@ -39,10 +41,10 @@ body{
 }
 @keyframes delay {
     0%{
-        transform: translateX(-9999px);
+        opacity: 10%;
     }
     100%{
-        transform: translateX(0);
+        opacity: 100%;
     }  
 }
   @keyframes chargeur {
@@ -50,24 +52,29 @@ body{
       transform: rotate(0deg) scale(1);
       border-top-color: red;
       border-bottom-color: blue;
+      z-index: -1;
     }
     25%{
       border-top-color: blue;
       border-bottom-color: red;
+      z-index: -1;
     }
     50% {
        transform: rotate(360deg) scale(1.15);
       border-top-color: red;
       border-bottom-color: blue;
+      z-index: -1;
     }
     75%{
       border-top-color: blue;
       border-bottom-color: red;
+      z-index: -1;
     }
     100%{
        transform: rotate(720deg) scale(1);
       border-top-color: red;
       border-bottom-color: blue;
+      z-index: -1;
     }
 }
 
@@ -90,6 +97,7 @@ body{
     background-color: rgb(245, 241, 241);
     padding-top: 5%;
     padding-bottom: 5%;
+    height: 250px;
 }
 .Explorer h1{
     text-align: center;
@@ -175,6 +183,9 @@ body{
 h2{
     padding-left: 10px;
 }
+h3{
+    padding-left: 10px;
+}
 .Restaurants{
     background-color:#F2F2F2;
     padding-top: 20px;
@@ -194,9 +205,32 @@ h2{
     display: flex;
     align-items: end;
     justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 20px;
+    
     font-size: 20px;
+}
+.coeurdouble1{
+    position: absolute;
+    right: 1rem ;
+    margin: 0;
+    font-size: 20px;
+    padding-right: 10px;
+    color: transparent;
+    &:hover{
+        z-index: -1;
+    }
+}
+.coeurdouble2{
+    position: absolute;
+    right: 1rem ;
+    margin: 0;
+    font-size: 20px;
+    padding-right: 10px;
+    transition: all 500ms;
+    &:hover{
+        background-image: linear-gradient(purple,pink);
+        z-index: 1;
+        transition-duration: 2s;
+    }
 }
 
 .img1{
@@ -310,6 +344,64 @@ Footer p{
     }
 body{
     margin: 0;
+}
+.chargement{
+    &-loader{
+        margin:auto;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        border: 16px solid white;
+        width: 100px;
+        height: 100px;
+        border-top-color: blue;
+        border-bottom-color: red;
+        border-radius: 50%;
+        animation: chargeur 2s  infinite;
+        z-index: 1;
+        position: absolute;
+        margin-left: 40%;
+    }
+}
+.delay{
+    animation: delay 1s 1s both;
+}
+@keyframes delay {
+    0%{
+        opacity: 10%;
+    }
+    100%{
+        opacity: 100%;
+    }  
+}
+  @keyframes chargeur {
+    0%{
+      transform: rotate(0deg) scale(1);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
+    25%{
+      border-top-color: blue;
+      border-bottom-color: red;
+      z-index: -1;
+    }
+    50% {
+       transform: rotate(360deg) scale(1.15);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
+    75%{
+      border-top-color: blue;
+      border-bottom-color: red;
+      z-index: -1;
+    }
+    100%{
+       transform: rotate(720deg) scale(1);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
 }
 
 .logoomf{
@@ -579,6 +671,64 @@ Footer p{
     }
 body{
     margin: 0;
+}
+.chargement{
+    &-loader{
+        margin:auto;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        border: 16px solid white;
+        width: 100px;
+        height: 100px;
+        border-top-color: blue;
+        border-bottom-color: red;
+        border-radius: 50%;
+        animation: chargeur 2s  infinite;
+        z-index: 1;
+        position: absolute;
+        margin-left: 44%;
+    }
+}
+.delay{
+    animation: delay 1s 1s both;
+}
+@keyframes delay {
+    0%{
+        opacity: 10%;
+    }
+    100%{
+        opacity: 100%;
+    }  
+}
+  @keyframes chargeur {
+    0%{
+      transform: rotate(0deg) scale(1);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
+    25%{
+      border-top-color: blue;
+      border-bottom-color: red;
+      z-index: -1;
+    }
+    50% {
+       transform: rotate(360deg) scale(1.15);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
+    75%{
+      border-top-color: blue;
+      border-bottom-color: red;
+      z-index: -1;
+    }
+    100%{
+       transform: rotate(720deg) scale(1);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
 }
 .logoomf{
     text-align: center;
