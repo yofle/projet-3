@@ -8,6 +8,64 @@
   body{
     margin: 0;
   }
+  .chargement{
+    &-loader{
+        margin:auto;
+        margin-top: 200px;
+        margin-bottom: 100px;
+        border: 16px solid white;
+        width: 100px;
+        height: 100px;
+        border-top-color: blue;
+        border-bottom-color: red;
+        border-radius: 50%;
+        animation: chargeur 2s  infinite;
+        z-index: 1;
+        position: absolute;
+        margin-left: 28%;
+    }
+}
+.delay{
+    animation: delay 1s 1s both;
+}
+@keyframes delay {
+    0%{
+        opacity: 10%;
+    }
+    100%{
+        opacity: 100%;
+    }  
+}
+  @keyframes chargeur {
+    0%{
+      transform: rotate(0deg) scale(1);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
+    25%{
+      border-top-color: blue;
+      border-bottom-color: red;
+      z-index: -1;
+    }
+    50% {
+       transform: rotate(360deg) scale(1.15);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
+    75%{
+      border-top-color: blue;
+      border-bottom-color: red;
+      z-index: -1;
+    }
+    100%{
+       transform: rotate(720deg) scale(1);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
+}
   nav{
     background-color: #F2F2F2;
     padding-bottom: 30px;
@@ -106,6 +164,66 @@ h3{
   margin: 0px;
   font-size: 15px;
 }
+@keyframes V{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
+.fa-check-circle{
+  font-size: 20px;
+  &:hover{
+  animation: V 1s 0ms both ;}
+}
+.apparition{
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1800ms both;
+  display: flex;
+  height: 60px ;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@keyframes valid {
+  0%{
+    opacity: 0%;
+    transform: translateX(-100px)
+  }
+  100%{
+    opacity:100%;
+    transform: translateX(0px);
+  }
+}
+.validation{
+  text-align: center;
+  width: 10%;
+  padding-top: 20px;
+  background-color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+  opacity: 0;
+  &:hover{
+    animation: valid 1.5s 0ms both ;
+    transform-origin: right 50%;
+  }
+}
+
+@keyframes menuE {
+  0%{
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+  50%{
+    opacity: 50%;
+  }
+  100%{
+    opacity:100%
+  }
+}
+
 .e1{
   display: flex ;
   font-size: 15px;
@@ -121,14 +239,10 @@ h3{
   font-size: 15px;
   justify-content: space-between;
 }
+
 .E1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .E2{
   margin: 10px;
@@ -138,6 +252,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1900ms both;
 }
 .E3{
   margin: 10px;
@@ -147,6 +262,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 2s both;
 }
 .Plats{
   padding-bottom: 20px;
@@ -175,6 +291,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1800ms both;
 }
 .P2{
   margin: 10px;
@@ -184,6 +301,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1900ms both;
 }
 .P3{
   margin: 10px;
@@ -193,6 +311,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 2s both;
 }
 .Desserts{
   padding-bottom: 20px;
@@ -221,6 +340,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1800ms both;
 }
 .D2{
   margin: 10px;
@@ -230,6 +350,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1900ms both;
 }
 .D3{
   margin: 10px;
@@ -239,6 +360,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 2s both;
 }
 .prix{
   font-weight: bold;
@@ -257,6 +379,10 @@ h3{
   margin-right: 30%;
   text-align: center;
   margin-bottom: 50px;
+  &:hover{
+    box-shadow: 5px 5px 5px 5px #969da6;
+    filter: brightness(110%);
+}
 }
 Footer{
   background-color: black;
@@ -300,6 +426,64 @@ Footer p{
   body{
     margin: 0;
   }
+  .chargement{
+    &-loader{
+        margin:auto;
+        margin-top: 200px;
+        margin-bottom: 100px;
+        border: 16px solid white;
+        width: 100px;
+        height: 100px;
+        border-top-color: blue;
+        border-bottom-color: red;
+        border-radius: 50%;
+        animation: chargeur 2s  infinite;
+        z-index: 1;
+        position: absolute;
+        margin-left: 28%;
+    }
+}
+.delay{
+    animation: delay 1s 1s both;
+}
+@keyframes delay {
+    0%{
+        opacity: 10%;
+    }
+    100%{
+        opacity: 100%;
+    }  
+}
+  @keyframes chargeur {
+    0%{
+      transform: rotate(0deg) scale(1);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
+    25%{
+      border-top-color: blue;
+      border-bottom-color: red;
+      z-index: -1;
+    }
+    50% {
+       transform: rotate(360deg) scale(1.15);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
+    75%{
+      border-top-color: blue;
+      border-bottom-color: red;
+      z-index: -1;
+    }
+    100%{
+       transform: rotate(720deg) scale(1);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
+}
   nav{
     background-color: #F2F2F2;
     padding-bottom: 30px;
@@ -398,6 +582,18 @@ h3{
   margin: 0px;
   font-size: 15px;
 }
+@keyframes menuE {
+  0%{
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+  50%{
+    opacity: 50%;
+  }
+  100%{
+    opacity:100%
+  }
+}
 .e1{
   display: flex ;
   font-size: 15px;
@@ -421,6 +617,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1800ms both;
 }
 .E2{
   margin: 10px;
@@ -430,6 +627,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1900ms both;
 }
 .E3{
   margin: 10px;
@@ -439,6 +637,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 2000ms both;
 }
 .Plats{
   padding-bottom: 20px;
@@ -467,6 +666,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1800ms both;
 }
 .P2{
   margin: 10px;
@@ -476,6 +676,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1900ms both;
 }
 .P3{
   margin: 10px;
@@ -485,6 +686,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 2000ms both;
 }
 .Desserts{
   padding-bottom: 20px;
@@ -513,6 +715,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1800ms both;
 }
 .D2{
   margin: 10px;
@@ -522,6 +725,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1900ms both;
 }
 .D3{
   margin: 10px;
@@ -531,6 +735,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 2000ms both;
 }
 .prix{
   font-weight: bold;
@@ -549,6 +754,10 @@ h3{
   margin-right: 30%;
   text-align: center;
   margin-bottom: 50px;
+  &:hover{
+    box-shadow: 5px 5px 5px 5px #969da6;
+    filter: brightness(110%);
+}
 }
 Footer{
   background-color: black;
@@ -592,6 +801,64 @@ Footer p{
   body{
     margin: 0;
   }
+  .chargement{
+    &-loader{
+        margin:auto;
+        margin-top: 200px;
+        margin-bottom: 100px;
+        border: 16px solid white;
+        width: 100px;
+        height: 100px;
+        border-top-color: blue;
+        border-bottom-color: red;
+        border-radius: 50%;
+        animation: chargeur 2s  infinite;
+        z-index: 1;
+        position: absolute;
+        margin-left: 28%;
+    }
+}
+.delay{
+    animation: delay 1s 1s both;
+}
+@keyframes delay {
+    0%{
+        opacity: 10%;
+    }
+    100%{
+        opacity: 100%;
+    }  
+}
+  @keyframes chargeur {
+    0%{
+      transform: rotate(0deg) scale(1);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
+    25%{
+      border-top-color: blue;
+      border-bottom-color: red;
+      z-index: -1;
+    }
+    50% {
+       transform: rotate(360deg) scale(1.15);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
+    75%{
+      border-top-color: blue;
+      border-bottom-color: red;
+      z-index: -1;
+    }
+    100%{
+       transform: rotate(720deg) scale(1);
+      border-top-color: red;
+      border-bottom-color: blue;
+      z-index: -1;
+    }
+}
   nav{
     background-color: #F2F2F2;
     padding-bottom: 30px;
@@ -690,6 +957,18 @@ h3{
   margin: 0px;
   font-size: 15px;
 }
+@keyframes menuE {
+  0%{
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+  50%{
+    opacity: 50%;
+  }
+  100%{
+    opacity:100%
+  }
+}
 .e1{
   display: flex ;
   font-size: 15px;
@@ -713,6 +992,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1800ms both;
 }
 .E2{
   margin: 10px;
@@ -722,6 +1002,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1900ms both;
 }
 .E3{
   margin: 10px;
@@ -731,6 +1012,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 2000ms both;
 }
 .Plats{
   padding-bottom: 20px;
@@ -759,6 +1041,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1800ms both;
 }
 .P2{
   margin: 10px;
@@ -768,6 +1051,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1900ms both;
 }
 .P3{
   margin: 10px;
@@ -777,6 +1061,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 2000ms both;
 }
 .Desserts{
   padding-bottom: 20px;
@@ -805,6 +1090,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1800ms both;
 }
 .D2{
   margin: 10px;
@@ -814,6 +1100,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1900ms both;
 }
 .D3{
   margin: 10px;
@@ -823,6 +1110,7 @@ h3{
   padding: 5px;
   padding-right: 15px;
   box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 2000ms both;
 }
 .prix{
   font-weight: bold;
@@ -841,6 +1129,10 @@ h3{
   margin-right: 30%;
   text-align: center;
   margin-bottom: 50px;
+  &:hover{
+    box-shadow: 5px 5px 5px 5px #969da6;
+    filter: brightness(110%);
+}
 }
 Footer{
   background-color: black;

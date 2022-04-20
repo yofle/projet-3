@@ -30,7 +30,6 @@
     animation: chargeur 2s infinite;
     z-index: 1;
     position: absolute;
-    margin-left: 28%;
   }
 
   .delay {
@@ -112,13 +111,17 @@
     border: 1px solid #9356DC;
     border-radius: 20px 20px;
     color: white;
-    background: radial-gradient(circle at 40%, #FF79DA, #9356DC);
+    background: radial-gradient(circle at 40%, #FF79DA, #9356dc);
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 3px 3px 3px 3px #cdd4dd;
     opacity: 0.8;
     margin-left: 20%;
     margin-right: 20%;
+  }
+  .bouton1:hover {
+    box-shadow: 5px 5px 5px 5px #969da6;
+    filter: brightness(110%);
   }
 
   .Fonctionnement {
@@ -384,7 +387,6 @@
     animation: chargeur 2s infinite;
     z-index: 1;
     position: absolute;
-    margin-left: 40%;
   }
 
   .delay {
@@ -472,6 +474,10 @@
     opacity: 0.8;
     margin-left: 20%;
     margin-right: 20%;
+  }
+  .bouton1:hover {
+    box-shadow: 5px 5px 5px 5px #969da6;
+    filter: brightness(110%);
   }
 
   .Fonctionnement {
@@ -754,7 +760,6 @@
     animation: chargeur 2s infinite;
     z-index: 1;
     position: absolute;
-    margin-left: 44%;
   }
 
   .delay {
@@ -842,6 +847,10 @@
     opacity: 0.8;
     margin-left: 20%;
     margin-right: 20%;
+  }
+  .bouton1:hover {
+    box-shadow: 5px 5px 5px 5px #969da6;
+    filter: brightness(110%);
   }
 
   .Fonctionnement {
