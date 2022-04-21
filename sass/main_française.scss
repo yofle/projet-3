@@ -173,9 +173,11 @@ h3{
   }
 }
 .fa-check-circle{
-  font-size: 20px;
-  &:hover{
-  animation: V 1s 0ms both ;}
+  font-size: 22px;
+  background: white;
+  color: #99E2D0;
+  border-radius: 100px 100px;
+
 }
 .apparition{
   border: 1px white solid;
@@ -185,17 +187,25 @@ h3{
   animation: menuE 1s 1800ms both;
   display: flex;
   height: 60px ;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 10px;
+  &:hover{
+    .validation{
+    animation: valid 500ms 0ms both ;
+    transform-origin: right 50%;
+    .fa-check-circle{
+      animation: V 1s 0ms both ;
+    }
+    }
+  }
 }
 @keyframes valid {
   0%{
     opacity: 0%;
-    transform: translateX(-100px)
+    transform: scaleX(0);
   }
   100%{
     opacity:100%;
-    transform: translateX(0px);
+    transform: scaleX(1);
   }
 }
 .validation{
@@ -205,10 +215,6 @@ h3{
   background-color: #99E2D0;
   border-radius: 0px 10px 10px 0px;
   opacity: 0;
-  &:hover{
-    animation: valid 1.5s 0ms both ;
-    transform-origin: right 50%;
-  }
 }
 
 @keyframes menuE {
@@ -245,24 +251,12 @@ h3{
   margin: 10px;
 }
 .E2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1900ms both;
 }
 .E3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 2s both;
 }
 .Plats{
   padding-bottom: 20px;
@@ -284,34 +278,16 @@ h3{
   justify-content: space-between;
 }
 .P1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1800ms both;
 }
 .P2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1900ms both;
 }
 .P3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 2s both;
 }
 .Desserts{
   padding-bottom: 20px;
@@ -333,34 +309,16 @@ h3{
   justify-content: space-between;
 }
 .D1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1800ms both;
 }
 .D2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1900ms both;
 }
 .D3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 2s both;
 }
 .prix{
   font-weight: bold;
