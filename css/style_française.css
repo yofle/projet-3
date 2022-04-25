@@ -11,8 +11,8 @@
 
   .chargement-loader {
     margin: auto;
-    margin-top: 200px;
-    margin-bottom: 100px;
+    top: 5%;
+    left: 5%;
     border: 16px solid white;
     width: 100px;
     height: 100px;
@@ -104,17 +104,18 @@
 
   .imgalf {
     background-image: url("../images./restaurants./3.jpg");
-    height: 300px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: top;
   }
 
   .bigHeart {
     position: relative;
-    margin-top: -90px;
+    margin-top: -170px;
   }
 
-  .heart {
+  .coeur {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -124,8 +125,32 @@
     border-radius: 40px 40px 0px 0px;
   }
 
-  .fa-heart {
-    font-size: 20px;
+  .coeur .fas {
+    color: #bc6fd7;
+    padding-right: 10px;
+    padding-top: 30px;
+    font-size: 25px;
+    position: absolute;
+    right: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 0px 50px 0px 0px;
+  }
+  .coeur .fas:hover {
+    z-index: 1;
+  }
+
+  .coeur .far {
+    color: black;
+    padding-right: 10px;
+    padding-top: 30px;
+    font-size: 25px;
+    position: absolute;
+    right: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 0px 50px 0px 0px;
+  }
+  .coeur .far:hover {
+    z-index: -1;
   }
 
   h1 {
@@ -142,7 +167,7 @@
   .Entrées h2::after {
     content: "";
     position: absolute;
-    top: 23.5rem;
+    top: 25rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -152,7 +177,7 @@
   .Plats h2::after {
     content: "";
     position: absolute;
-    top: 39.8rem;
+    top: 42.2rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -162,7 +187,7 @@
   .Desserts h2::after {
     content: "";
     position: absolute;
-    top: 56.1rem;
+    top: 59.7rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -395,6 +420,7 @@
     margin-bottom: 10px;
     font-weight: bolder;
     font-family: "Shrikhand";
+    font-size: 20px;
   }
 
   .fa-utensils {
@@ -508,7 +534,7 @@
   }
 
   .ohmyfood {
-    padding-left: 40%;
+    padding-left: 30%;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -521,9 +547,10 @@
 
   .imgalf {
     background-image: url("../images./restaurants./3.jpg");
-    height: 300px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: bottom;
   }
 
   .bigHeart {
@@ -531,7 +558,7 @@
     margin-top: -90px;
   }
 
-  .heart {
+  .coeur {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -541,8 +568,32 @@
     border-radius: 40px 40px 0px 0px;
   }
 
-  .fa-heart {
-    font-size: 20px;
+  .coeur .fas {
+    color: #bc6fd7;
+    padding-right: 10px;
+    padding-top: 30px;
+    font-size: 25px;
+    position: absolute;
+    right: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 0px 50px 0px 0px;
+  }
+  .coeur .fas:hover {
+    z-index: 1;
+  }
+
+  .coeur .far {
+    color: black;
+    padding-right: 10px;
+    padding-top: 30px;
+    font-size: 25px;
+    position: absolute;
+    right: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 0px 50px 0px 0px;
+  }
+  .coeur .far:hover {
+    z-index: -1;
   }
 
   h1 {
@@ -559,7 +610,7 @@
   .Entrées h2::after {
     content: "";
     position: absolute;
-    top: 23.5rem;
+    top: 29.7rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -569,7 +620,7 @@
   .Plats h2::after {
     content: "";
     position: absolute;
-    top: 39.8rem;
+    top: 47.2rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -579,7 +630,7 @@
   .Desserts h2::after {
     content: "";
     position: absolute;
-    top: 56.1rem;
+    top: 64.7rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -595,6 +646,58 @@
   h3 {
     margin: 0px;
     font-size: 15px;
+  }
+
+  @keyframes V {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .fa-check-circle {
+    font-size: 22px;
+    background: white;
+    color: #99E2D0;
+    border-radius: 100px 100px;
+  }
+
+  .apparition {
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 3px #cdd4dd;
+    animation: menuE 1s 1800ms both;
+    display: flex;
+    height: 60px;
+    margin: 10px;
+  }
+  .apparition:hover .validation {
+    animation: valid 500ms 0ms both;
+    transform-origin: right 50%;
+  }
+  .apparition:hover .validation .fa-check-circle {
+    animation: V 1s 0ms both;
+  }
+
+  @keyframes valid {
+    0% {
+      opacity: 0%;
+      transform: scaleX(0);
+    }
+    100% {
+      opacity: 100%;
+      transform: scaleX(1);
+    }
+  }
+  .validation {
+    text-align: center;
+    width: 10%;
+    padding-top: 20px;
+    background-color: #99E2D0;
+    border-radius: 0px 10px 10px 0px;
+    opacity: 0;
   }
 
   @keyframes menuE {
@@ -628,36 +731,18 @@
   }
 
   .E1 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 1800ms both;
   }
 
   .E2 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 1900ms both;
   }
 
   .E3 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 2000ms both;
   }
 
   .Plats {
@@ -684,36 +769,18 @@
   }
 
   .P1 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 1800ms both;
   }
 
   .P2 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 1900ms both;
   }
 
   .P3 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 2000ms both;
   }
 
   .Desserts {
@@ -740,36 +807,18 @@
   }
 
   .D1 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 1800ms both;
   }
 
   .D2 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 1900ms both;
   }
 
   .D3 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 2000ms both;
   }
 
   .prix {
@@ -814,6 +863,7 @@
     margin-bottom: 10px;
     font-weight: bolder;
     font-family: "Shrikhand";
+    font-size: 20px;
   }
 
   .fa-utensils {
@@ -927,7 +977,7 @@
   }
 
   .ohmyfood {
-    padding-left: 40%;
+    padding-left: 30%;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -940,9 +990,10 @@
 
   .imgalf {
     background-image: url("../images./restaurants./3.jpg");
-    height: 300px;
+    height: 600px;
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: bottom;
   }
 
   .bigHeart {
@@ -950,7 +1001,7 @@
     margin-top: -90px;
   }
 
-  .heart {
+  .coeur {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -960,8 +1011,32 @@
     border-radius: 40px 40px 0px 0px;
   }
 
-  .fa-heart {
-    font-size: 20px;
+  .coeur .fas {
+    color: #bc6fd7;
+    padding-right: 10px;
+    padding-top: 30px;
+    font-size: 25px;
+    position: absolute;
+    right: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 0px 50px 0px 0px;
+  }
+  .coeur .fas:hover {
+    z-index: 1;
+  }
+
+  .coeur .far {
+    color: black;
+    padding-right: 10px;
+    padding-top: 30px;
+    font-size: 25px;
+    position: absolute;
+    right: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 0px 50px 0px 0px;
+  }
+  .coeur .far:hover {
+    z-index: -1;
   }
 
   h1 {
@@ -978,7 +1053,7 @@
   .Entrées h2::after {
     content: "";
     position: absolute;
-    top: 23.5rem;
+    top: 42.2rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -988,7 +1063,7 @@
   .Plats h2::after {
     content: "";
     position: absolute;
-    top: 39.8rem;
+    top: 59.7rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -998,7 +1073,7 @@
   .Desserts h2::after {
     content: "";
     position: absolute;
-    top: 56.1rem;
+    top: 77.2rem;
     left: 0.7rem;
     height: 0.2rem;
     width: 2.5rem;
@@ -1014,6 +1089,58 @@
   h3 {
     margin: 0px;
     font-size: 15px;
+  }
+
+  @keyframes V {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .fa-check-circle {
+    font-size: 22px;
+    background: white;
+    color: #99E2D0;
+    border-radius: 100px 100px;
+  }
+
+  .apparition {
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 3px #cdd4dd;
+    animation: menuE 1s 1800ms both;
+    display: flex;
+    height: 60px;
+    margin: 10px;
+  }
+  .apparition:hover .validation {
+    animation: valid 500ms 0ms both;
+    transform-origin: right 50%;
+  }
+  .apparition:hover .validation .fa-check-circle {
+    animation: V 1s 0ms both;
+  }
+
+  @keyframes valid {
+    0% {
+      opacity: 0%;
+      transform: scaleX(0);
+    }
+    100% {
+      opacity: 100%;
+      transform: scaleX(1);
+    }
+  }
+  .validation {
+    text-align: center;
+    width: 10%;
+    padding-top: 20px;
+    background-color: #99E2D0;
+    border-radius: 0px 10px 10px 0px;
+    opacity: 0;
   }
 
   @keyframes menuE {
@@ -1047,36 +1174,18 @@
   }
 
   .E1 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 1800ms both;
   }
 
   .E2 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 1900ms both;
   }
 
   .E3 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 2000ms both;
   }
 
   .Plats {
@@ -1103,36 +1212,18 @@
   }
 
   .P1 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 1800ms both;
   }
 
   .P2 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 1900ms both;
   }
 
   .P3 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 2000ms both;
   }
 
   .Desserts {
@@ -1159,36 +1250,18 @@
   }
 
   .D1 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 1800ms both;
   }
 
   .D2 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 1900ms both;
   }
 
   .D3 {
+    width: 90%;
     margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
-    animation: menuE 1s 2000ms both;
   }
 
   .prix {
@@ -1233,6 +1306,7 @@
     margin-bottom: 10px;
     font-weight: bolder;
     font-family: "Shrikhand";
+    font-size: 20px;
   }
 
   .fa-utensils {

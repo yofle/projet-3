@@ -246,7 +246,7 @@
   .Nouveau1 {
     position: absolute;
     z-index: 2;
-    top: 59%;
+    top: 55%;
     right: 1rem;
     background-color: #99E2D0;
     padding: 5px;
@@ -261,7 +261,7 @@
   .Nouveau2 {
     position: absolute;
     z-index: 2;
-    top: 77%;
+    top: 72%;
     right: 1rem;
     background-color: #99E2D0;
     padding: 5px;
@@ -463,8 +463,8 @@
 
   .chargement-loader {
     margin: auto;
-    margin-top: 150px;
-    margin-bottom: 100px;
+    top: 10%;
+    left: 35%;
     border: 16px solid white;
     width: 100px;
     height: 100px;
@@ -689,7 +689,7 @@
   .Nouveau1 {
     position: absolute;
     z-index: 2;
-    top: 55.5%;
+    top: 52%;
     right: 1rem;
     background-color: #98e2cf;
     padding: 5px;
@@ -704,7 +704,7 @@
   .Nouveau2 {
     position: absolute;
     z-index: 2;
-    top: 55.5%;
+    top: 52%;
     right: 53%;
     background-color: #99E2D0;
     padding: 5px;
@@ -920,8 +920,8 @@
 
   .chargement-loader {
     margin: auto;
-    margin-top: 150px;
-    margin-bottom: 100px;
+    top: 13%;
+    left: 35%;
     border: 16px solid white;
     width: 100px;
     height: 100px;
@@ -1146,7 +1146,7 @@
   .Nouveau1 {
     position: absolute;
     z-index: 2;
-    top: 58%;
+    top: 55%;
     right: 1rem;
     background-color: #98e2cf;
     padding: 5px;
@@ -1161,7 +1161,7 @@
   .Nouveau2 {
     position: absolute;
     z-index: 2;
-    top: 58%;
+    top: 55%;
     right: 53%;
     background-color: #99E2D0;
     padding: 5px;

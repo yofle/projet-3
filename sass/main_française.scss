@@ -11,8 +11,8 @@
   .chargement{
     &-loader{
         margin:auto;
-        margin-top: 200px;
-        margin-bottom: 100px;
+        top: 5%;
+        left: 5%;
         border: 16px solid white;
         width: 100px;
         height: 100px;
@@ -99,15 +99,16 @@
 }
 .imgalf{
   background-image:url("../images./restaurants./3.jpg");
-  height: 300px;
+  height: 400px;
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: top;
 }
 .bigHeart{
   position: relative;
-  margin-top: -90px;
+  margin-top: -170px;
 }
-.heart{
+.coeur{
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -116,8 +117,31 @@
   background-color: #F2F2F2;
   border-radius: 40px 40px 0px 0px;
 }
-.fa-heart{
-  font-size: 20px;
+.coeur .fas{
+  color: #bc6fd7;
+  padding-right: 10px;
+  padding-top: 30px;
+  font-size: 25px;
+  position: absolute;
+  right: 1rem;
+  background-color: #F2F2F2;
+  border-radius: 0px 50px 0px 0px;
+  &:hover{
+      z-index: 1;
+  }
+}
+.coeur .far{
+  color: black;
+  padding-right: 10px;
+  padding-top: 30px;
+  font-size: 25px;
+  position: absolute;
+  right: 1rem;
+  background-color:#F2F2F2;
+  border-radius: 0px 50px 0px 0px;
+  &:hover{
+      z-index: -1;
+  }
 }
 h1{
   margin-bottom: 0px;
@@ -131,7 +155,7 @@ h1{
 .Entrées h2::after{
   content: "";
     position: absolute;
-    top: 23.5rem;
+    top: 25rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -140,7 +164,7 @@ h1{
 .Plats h2::after{
   content: "";
     position: absolute;
-    top: 39.8rem;
+    top: 42.2rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -149,7 +173,7 @@ h1{
 .Desserts h2::after{
   content: "";
     position: absolute;
-    top: 56.1rem;
+    top: 59.7rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -357,7 +381,8 @@ Footer p{
 .omf{
   margin-bottom: 10px;
   font-weight: bolder;
-  font-family:"Shrikhand",
+  font-family:"Shrikhand";
+  font-size: 20px;
 }
 .fa-utensils{
   color: white;
@@ -378,378 +403,404 @@ Footer p{
 }
 @media screen and (max-width:1023px) and (min-width:601px)
 {
-  html {
-    font-family:"Roboto", "Arial";
+    html {
+      font-family:"Roboto", "Arial";
+    }
+    body{
+      margin: 0;
+    }
+    .chargement{
+      &-loader{
+          margin:auto;
+          margin-top: 200px;
+          margin-bottom: 100px;
+          border: 16px solid white;
+          width: 100px;
+          height: 100px;
+          border-top-color: blue;
+          border-bottom-color: red;
+          border-radius: 50%;
+          animation: chargeur 2s  infinite;
+          z-index: 1;
+          position: absolute;
+          margin-left: 28%;
+      }
   }
-  body{
-    margin: 0;
+  .delay{
+      animation: delay 1s 1s both;
   }
-  .chargement{
-    &-loader{
-        margin:auto;
-        margin-top: 200px;
-        margin-bottom: 100px;
-        border: 16px solid white;
-        width: 100px;
-        height: 100px;
+  @keyframes delay {
+      0%{
+          opacity: 10%;
+      }
+      100%{
+          opacity: 100%;
+      }  
+  }
+    @keyframes chargeur {
+      0%{
+        transform: rotate(0deg) scale(1);
+        border-top-color: red;
+        border-bottom-color: blue;
+        z-index: -1;
+      }
+      25%{
         border-top-color: blue;
         border-bottom-color: red;
-        border-radius: 50%;
-        animation: chargeur 2s  infinite;
-        z-index: 1;
-        position: absolute;
-        margin-left: 28%;
+        z-index: -1;
+      }
+      50% {
+         transform: rotate(360deg) scale(1.15);
+        border-top-color: red;
+        border-bottom-color: blue;
+        z-index: -1;
+      }
+      75%{
+        border-top-color: blue;
+        border-bottom-color: red;
+        z-index: -1;
+      }
+      100%{
+         transform: rotate(720deg) scale(1);
+        border-top-color: red;
+        border-bottom-color: blue;
+        z-index: -1;
+      }
+  }
+    nav{
+      background-color: #F2F2F2;
+      padding-bottom: 30px;
+      border-radius: 40px 40px 0px 0px;
     }
-}
-.delay{
-    animation: delay 1s 1s both;
-}
-@keyframes delay {
-    0%{
-        opacity: 10%;
+  
+    a:link {
+      text-decoration: none;
     }
-    100%{
-        opacity: 100%;
-    }  
-}
-  @keyframes chargeur {
-    0%{
-      transform: rotate(0deg) scale(1);
-      border-top-color: red;
-      border-bottom-color: blue;
-      z-index: -1;
+    p{
+      margin-bottom: 5px;
+      margin-top: 5px;
+      font-size: 14px;
     }
-    25%{
-      border-top-color: blue;
-      border-bottom-color: red;
-      z-index: -1;
-    }
-    50% {
-       transform: rotate(360deg) scale(1.15);
-      border-top-color: red;
-      border-bottom-color: blue;
-      z-index: -1;
-    }
-    75%{
-      border-top-color: blue;
-      border-bottom-color: red;
-      z-index: -1;
-    }
-    100%{
-       transform: rotate(720deg) scale(1);
-      border-top-color: red;
-      border-bottom-color: blue;
-      z-index: -1;
-    }
-}
-  nav{
+  
+  .entête{
+      display: flex;
+      align-items: center;
+      background-color: white;
+      margin-top: 10px;
+  }
+  .ohmyfood{
+    padding-left: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .fa-solid{
+    padding-left: 10px;
+    color: black;
+    margin-bottom: 10px;
+  }
+  .imgalf{
+    background-image:url("../images./restaurants./3.jpg");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+  }
+  .bigHeart{
+    position: relative;
+    margin-top: -90px;
+  }
+  .coeur{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: #F2F2F2;
-    padding-bottom: 30px;
     border-radius: 40px 40px 0px 0px;
   }
-
-  a:link {
-    text-decoration: none;
+  .coeur .fas{
+    color: #bc6fd7;
+    padding-right: 10px;
+    padding-top: 30px;
+    font-size: 25px;
+    position: absolute;
+    right: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 0px 50px 0px 0px;
+    &:hover{
+        z-index: 1;
+    }
   }
-  p{
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-size: 14px;
+  .coeur .far{
+    color: black;
+    padding-right: 10px;
+    padding-top: 30px;
+    font-size: 25px;
+    position: absolute;
+    right: 1rem;
+    background-color:#F2F2F2;
+    border-radius: 0px 50px 0px 0px;
+    &:hover{
+        z-index: -1;
+    }
   }
-
-.entête{
-    display: flex;
-    align-items: center;
+  h1{
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+  .Entrées{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #F2F2F2;
+  }
+  .Entrées h2::after{
+    content: "";
+      position: absolute;
+      top: 29.7rem;
+      left: 0.7rem;
+      height: 0.20rem;
+      width: 2.5rem;
+      background-color: #99E2D0;
+  }
+  .Plats h2::after{
+    content: "";
+      position: absolute;
+      top: 47.2rem;
+      left: 0.7rem;
+      height: 0.20rem;
+      width: 2.5rem;
+      background-color: #99E2D0;
+  }
+  .Desserts h2::after{
+    content: "";
+      position: absolute;
+      top: 64.7rem;
+      left: 0.7rem;
+      height: 0.20rem;
+      width: 2.5rem;
+      background-color: #99E2D0;
+  }
+  h2{
+    font-size: 15px;
+    font-weight: 100;
+    padding-left: 10px;
+  }
+  h3{
+    margin: 0px;
+    font-size: 15px;
+  }
+  @keyframes V{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg)
+    }
+  }
+  .fa-check-circle{
+    font-size: 22px;
+    background: white;
+    color: #99E2D0;
+    border-radius: 100px 100px;
+  
+  }
+  .apparition{
+    border: 1px white solid;
     background-color: white;
-    margin-top: 10px;
-}
-.ohmyfood{
-  padding-left: 40%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.fa-solid{
-  padding-left: 10px;
-  color: black;
-  margin-bottom: 10px;
-}
-.imgalf{
-  background-image:url("../images./restaurants./3.jpg");
-  height: 300px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.bigHeart{
-  position: relative;
-  margin-top: -90px;
-}
-.heart{
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: #F2F2F2;
-  border-radius: 40px 40px 0px 0px;
-}
-.fa-heart{
-  font-size: 20px;
-}
-h1{
-  margin-bottom: 0px;
-  margin-top: 30px;
-}
-.Entrées{
-  padding-bottom: 20px;
-  padding-top: 20px;
-  background-color: #F2F2F2;
-}
-.Entrées h2::after{
-  content: "";
-    position: absolute;
-    top: 23.5rem;
-    left: 0.7rem;
-    height: 0.20rem;
-    width: 2.5rem;
-    background-color: #99E2D0;
-}
-.Plats h2::after{
-  content: "";
-    position: absolute;
-    top: 39.8rem;
-    left: 0.7rem;
-    height: 0.20rem;
-    width: 2.5rem;
-    background-color: #99E2D0;
-}
-.Desserts h2::after{
-  content: "";
-    position: absolute;
-    top: 56.1rem;
-    left: 0.7rem;
-    height: 0.20rem;
-    width: 2.5rem;
-    background-color: #99E2D0;
-}
-h2{
-  font-size: 15px;
-  font-weight: 100;
-  padding-left: 10px;
-}
-h3{
-  margin: 0px;
-  font-size: 15px;
-}
-@keyframes menuE {
-  0%{
-    opacity: 0%;
-    transform: translateY(20px);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 3px #cdd4dd;
+    animation: menuE 1s 1800ms both;
+    display: flex;
+    height: 60px ;
+    margin: 10px;
+    &:hover{
+      .validation{
+      animation: valid 500ms 0ms both ;
+      transform-origin: right 50%;
+      .fa-check-circle{
+        animation: V 1s 0ms both ;
+      }
+      }
+    }
   }
-  50%{
-    opacity: 50%;
+  @keyframes valid {
+    0%{
+      opacity: 0%;
+      transform: scaleX(0);
+    }
+    100%{
+      opacity:100%;
+      transform: scaleX(1);
+    }
   }
-  100%{
-    opacity:100%
+  .validation{
+    text-align: center;
+    width: 10%;
+    padding-top: 20px;
+    background-color: #99E2D0;
+    border-radius: 0px 10px 10px 0px;
+    opacity: 0;
   }
-}
-.e1{
-  display: flex ;
-  font-size: 15px;
-  justify-content: space-between;
-}
-.e2{
-  display: flex ;
-  font-size: 15px;
-  justify-content: space-between;
-}
-.e3{
-  display: flex ;
-  font-size: 15px;
-  justify-content: space-between;
-}
-.E1{
-  margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1800ms both;
-}
-.E2{
-  margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1900ms both;
-}
-.E3{
-  margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 2000ms both;
-}
-.Plats{
-  padding-bottom: 20px;
-  background-color: #F2F2F2;
-}
-.p1{
-  display: flex ;
-  font-size: 15px;
-  justify-content: space-between;
-}
-.p2{
-  display: flex ;
-  font-size: 15px;
-  justify-content: space-between;
-}
-.p3{
-  display: flex ;
-  font-size: 15px;
-  justify-content: space-between;
-}
-.P1{
-  margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1800ms both;
-}
-.P2{
-  margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1900ms both;
-}
-.P3{
-  margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 2000ms both;
-}
-.Desserts{
-  padding-bottom: 20px;
-  background-color: #F2F2F2;
-}
-.d1{
-  display: flex ;
-  font-size: 15px;
-  justify-content: space-between;
-}
-.d2{
-  display: flex ;
-  font-size: 15px;
-  justify-content: space-between;
-}
-.d3{
-  display: flex ;
-  font-size: 15px;
-  justify-content: space-between;
-}
-.D1{
-  margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1800ms both;
-}
-.D2{
-  margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1900ms both;
-}
-.D3{
-  margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 2000ms both;
-}
-.prix{
-  font-weight: bold;
-  opacity: 0.8;
-}
-.bouton2{
-  border: 1px solid #9356DC ;
-  border-radius: 20px 20px;
-  color: white;
-  background:linear-gradient(0deg,#9356DC , #FF79DA);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  box-shadow: 3px 3px 3px 3px #cdd4dd;
-  opacity: 0.9;
-  margin-left: 30%;
-  margin-right: 30%;
-  text-align: center;
-  margin-bottom: 50px;
-  &:hover{
-    box-shadow: 5px 5px 5px 5px #969da6;
-    filter: brightness(110%);
-}
-}
-Footer{
-  background-color: black;
-  opacity: 0.8;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-Footer p{
-  color: white;
-  margin-top:0px;
-  margin-bottom: 8px;
-}
-.omf{
-  margin-bottom: 10px;
-  font-weight: bolder;
-  font-family:"Shrikhand",
-}
-.fa-utensils{
-  color: white;
-  padding-right: 18px;
-}
-.fa-hands-helping{
-  color: white;
-  padding-right: 12px;
-}
-.main{
-  display: flex;
-  align-items: baseline;
-}
-.couvert{
-  display: flex;
-  align-items: baseline;
-}
+  
+  @keyframes menuE {
+    0%{
+      opacity: 0%;
+      transform: translateY(20px);
+    }
+    50%{
+      opacity: 50%;
+    }
+    100%{
+      opacity:100%
+    }
+  }
+  
+  .e1{
+    display: flex ;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+  .e2{
+    display: flex ;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+  .e3{
+    display: flex ;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+  
+  .E1{
+    width: 90%;
+    margin: 10px;
+  }
+  .E2{
+    width: 90%;
+    margin: 10px;
+  }
+  .E3{
+    width: 90%;
+    margin: 10px;
+  }
+  .Plats{
+    padding-bottom: 20px;
+    background-color: #F2F2F2;
+  }
+  .p1{
+    display: flex ;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+  .p2{
+    display: flex ;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+  .p3{
+    display: flex ;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+  .P1{
+    width: 90%;
+    margin: 10px;
+  }
+  .P2{
+    width: 90%;
+    margin: 10px;
+  }
+  .P3{
+    width: 90%;
+    margin: 10px;
+  }
+  .Desserts{
+    padding-bottom: 20px;
+    background-color: #F2F2F2;
+  }
+  .d1{
+    display: flex ;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+  .d2{
+    display: flex ;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+  .d3{
+    display: flex ;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+  .D1{
+    width: 90%;
+    margin: 10px;
+  }
+  .D2{
+    width: 90%;
+    margin: 10px;
+  }
+  .D3{
+    width: 90%;
+    margin: 10px;
+  }
+  .prix{
+    font-weight: bold;
+    opacity: 0.8;
+  }
+  .bouton2{
+    border: 1px solid #9356DC ;
+    border-radius: 20px 20px;
+    color: white;
+    background:linear-gradient(0deg,#9356DC , #FF79DA);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 3px 3px 3px 3px #cdd4dd;
+    opacity: 0.9;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    margin-bottom: 50px;
+    &:hover{
+      box-shadow: 5px 5px 5px 5px #969da6;
+      filter: brightness(110%);
+  }
+  }
+  Footer{
+    background-color: black;
+    opacity: 0.8;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  Footer p{
+    color: white;
+    margin-top:0px;
+    margin-bottom: 8px;
+  }
+  .omf{
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-family:"Shrikhand";
+    font-size: 20px;
+  }
+  .fa-utensils{
+    color: white;
+    padding-right: 18px;
+  }
+  .fa-hands-helping{
+    color: white;
+    padding-right: 12px;
+  }
+  .main{
+    display: flex;
+    align-items: baseline;
+  }
+  .couvert{
+    display: flex;
+    align-items: baseline;
+  }
 }
 @media screen and (min-width: 1024px)
 {
@@ -839,7 +890,7 @@ Footer p{
     margin-top: 10px;
 }
 .ohmyfood{
-  padding-left: 40%;
+  padding-left: 30%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -850,15 +901,16 @@ Footer p{
 }
 .imgalf{
   background-image:url("../images./restaurants./3.jpg");
-  height: 300px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: bottom;
 }
 .bigHeart{
   position: relative;
   margin-top: -90px;
 }
-.heart{
+.coeur{
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -867,8 +919,31 @@ Footer p{
   background-color: #F2F2F2;
   border-radius: 40px 40px 0px 0px;
 }
-.fa-heart{
-  font-size: 20px;
+.coeur .fas{
+  color: #bc6fd7;
+  padding-right: 10px;
+  padding-top: 30px;
+  font-size: 25px;
+  position: absolute;
+  right: 1rem;
+  background-color: #F2F2F2;
+  border-radius: 0px 50px 0px 0px;
+  &:hover{
+      z-index: 1;
+  }
+}
+.coeur .far{
+  color: black;
+  padding-right: 10px;
+  padding-top: 30px;
+  font-size: 25px;
+  position: absolute;
+  right: 1rem;
+  background-color:#F2F2F2;
+  border-radius: 0px 50px 0px 0px;
+  &:hover{
+      z-index: -1;
+  }
 }
 h1{
   margin-bottom: 0px;
@@ -882,7 +957,7 @@ h1{
 .Entrées h2::after{
   content: "";
     position: absolute;
-    top: 23.5rem;
+    top: 42.2rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -891,7 +966,7 @@ h1{
 .Plats h2::after{
   content: "";
     position: absolute;
-    top: 39.8rem;
+    top: 59.7rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -900,7 +975,7 @@ h1{
 .Desserts h2::after{
   content: "";
     position: absolute;
-    top: 56.1rem;
+    top: 77.2rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -915,6 +990,59 @@ h3{
   margin: 0px;
   font-size: 15px;
 }
+@keyframes V{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
+.fa-check-circle{
+  font-size: 22px;
+  background: white;
+  color: #99E2D0;
+  border-radius: 100px 100px;
+
+}
+.apparition{
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1800ms both;
+  display: flex;
+  height: 60px ;
+  margin: 10px;
+  &:hover{
+    .validation{
+    animation: valid 500ms 0ms both ;
+    transform-origin: right 50%;
+    .fa-check-circle{
+      animation: V 1s 0ms both ;
+    }
+    }
+  }
+}
+@keyframes valid {
+  0%{
+    opacity: 0%;
+    transform: scaleX(0);
+  }
+  100%{
+    opacity:100%;
+    transform: scaleX(1);
+  }
+}
+.validation{
+  text-align: center;
+  width: 10%;
+  padding-top: 20px;
+  background-color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+  opacity: 0;
+}
+
 @keyframes menuE {
   0%{
     opacity: 0%;
@@ -927,6 +1055,7 @@ h3{
     opacity:100%
   }
 }
+
 .e1{
   display: flex ;
   font-size: 15px;
@@ -942,35 +1071,18 @@ h3{
   font-size: 15px;
   justify-content: space-between;
 }
+
 .E1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1800ms both;
 }
 .E2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1900ms both;
 }
 .E3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 2000ms both;
 }
 .Plats{
   padding-bottom: 20px;
@@ -992,34 +1104,16 @@ h3{
   justify-content: space-between;
 }
 .P1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1800ms both;
 }
 .P2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1900ms both;
 }
 .P3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 2000ms both;
 }
 .Desserts{
   padding-bottom: 20px;
@@ -1041,34 +1135,16 @@ h3{
   justify-content: space-between;
 }
 .D1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1800ms both;
 }
 .D2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 1900ms both;
 }
 .D3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
-  animation: menuE 1s 2000ms both;
 }
 .prix{
   font-weight: bold;
@@ -1107,7 +1183,8 @@ Footer p{
 .omf{
   margin-bottom: 10px;
   font-weight: bolder;
-  font-family:"Shrikhand",
+  font-family:"Shrikhand";
+  font-size: 20px;
 }
 .fa-utensils{
   color: white;

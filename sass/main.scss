@@ -234,7 +234,7 @@ h3{
 .Nouveau1{
     position: absolute;
     z-index: 2;
-    top: 59%;
+    top: 55%;
     right: 1rem;
     background-color: #99E2D0;
     padding: 5px;
@@ -248,7 +248,7 @@ h3{
 .Nouveau2{
     position: absolute;
     z-index: 2;
-    top: 77%;
+    top: 72%;
     right: 1rem;
     background-color: #99E2D0;
     padding: 5px;
@@ -432,8 +432,8 @@ body{
 .chargement{
     &-loader{
         margin:auto;
-        margin-top: 150px;
-        margin-bottom: 100px;
+        top: 10%;
+        left: 35%;
         border: 16px solid white;
         width: 100px;
         height: 100px;
@@ -641,7 +641,7 @@ h3{
 .Nouveau1{
     position: absolute;
     z-index: 2;
-    top: 55.5%;
+    top: 52%;
     right: 1rem;
     background-color: hsl(165, 56%, 74%);
     padding: 5px;
@@ -655,7 +655,7 @@ h3{
 .Nouveau2{
     position: absolute;
     z-index: 2;
-    top: 55.5%;
+    top: 52%;
     right: 53%;
     background-color: #99E2D0;
     padding: 5px;
@@ -850,9 +850,9 @@ Footer p{
  }
  .chargement{
      &-loader{
-         margin:auto;
-         margin-top: 150px;
-         margin-bottom: 100px;
+        margin:auto;
+        top: 13%;
+        left: 35%;
          border: 16px solid white;
          width: 100px;
          height: 100px;
@@ -1060,7 +1060,7 @@ Footer p{
  .Nouveau1{
      position: absolute;
      z-index: 2;
-     top: 58%;
+     top: 55%;
      right: 1rem;
      background-color: hsl(165, 56%, 74%);
      padding: 5px;
@@ -1074,7 +1074,7 @@ Footer p{
  .Nouveau2{
      position: absolute;
      z-index: 2;
-     top: 58%;
+     top: 55%;
      right: 53%;
      background-color: #99E2D0;
      padding: 5px;
