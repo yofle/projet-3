@@ -234,7 +234,7 @@ h3{
 .Nouveau1{
     position: absolute;
     z-index: 2;
-    top: 55%;
+    top: 820px;
     right: 1rem;
     background-color: #99E2D0;
     padding: 5px;
@@ -248,7 +248,7 @@ h3{
 .Nouveau2{
     position: absolute;
     z-index: 2;
-    top: 72%;
+    top: 1070px;
     right: 1rem;
     background-color: #99E2D0;
     padding: 5px;
@@ -265,6 +265,14 @@ h3{
     justify-content: space-between;
     font-size: 20px;
 }
+@keyframes remplis {
+    0%{
+        opacity: 0%;
+      }
+      100%{
+        opacity:100%
+      }
+  }
 .coeur .fas{
     color: #bc6fd7;
     padding-right: 10px;
@@ -274,6 +282,7 @@ h3{
     right: 1rem;
     &:hover{
         z-index: 1;
+        animation: remplis 500ms 0ms both;
     }
 }
 .coeur .far{
@@ -303,6 +312,7 @@ h3{
     right: 1rem;
     &:hover{
         z-index: 1;
+        animation: remplis 500ms 0ms both;
     }
 }
 .coeur1 .far{
@@ -641,7 +651,7 @@ h3{
 .Nouveau1{
     position: absolute;
     z-index: 2;
-    top: 52%;
+    top: 777px;
     right: 1rem;
     background-color: hsl(165, 56%, 74%);
     padding: 5px;
@@ -655,7 +665,7 @@ h3{
 .Nouveau2{
     position: absolute;
     z-index: 2;
-    top: 52%;
+    top: 777px;
     right: 53%;
     background-color: #99E2D0;
     padding: 5px;
@@ -672,6 +682,14 @@ h3{
     justify-content: space-between;
     font-size: 20px;
 }
+@keyframes remplis {
+    0%{
+        opacity: 0%;
+      }
+      100%{
+        opacity:100%
+      }
+  }
 .coeur .fas{
     color: #bc6fd7;
     padding-right: 10px;
@@ -681,6 +699,7 @@ h3{
     right: 1rem;
     &:hover{
         z-index: 1;
+        animation: remplis 500ms 0ms both;
     }
 }
 .coeur .far{
@@ -710,6 +729,7 @@ h3{
     right: 52%;
     &:hover{
         z-index: 1;
+        animation: remplis 500ms 0ms both;
     }
 }
 .coeur1 .far{
@@ -1060,7 +1080,7 @@ Footer p{
  .Nouveau1{
      position: absolute;
      z-index: 2;
-     top: 55%;
+     top: 820px;
      right: 1rem;
      background-color: hsl(165, 56%, 74%);
      padding: 5px;
@@ -1074,7 +1094,7 @@ Footer p{
  .Nouveau2{
      position: absolute;
      z-index: 2;
-     top: 55%;
+     top: 820px;
      right: 53%;
      background-color: #99E2D0;
      padding: 5px;
@@ -1091,6 +1111,14 @@ Footer p{
      justify-content: space-between;
      font-size: 20px;
  }
+ @keyframes remplis {
+    0%{
+        opacity: 0%;
+      }
+      100%{
+        opacity:100%
+      }
+  }
  .coeur .fas{
      color: #bc6fd7;
      padding-right: 10px;
@@ -1100,6 +1128,7 @@ Footer p{
      right: 1rem;
      &:hover{
          z-index: 1;
+         animation: remplis 500ms 0ms both ;
      }
  }
  .coeur .far{
@@ -1129,6 +1158,7 @@ Footer p{
      right: 52%;
      &:hover{
          z-index: 1;
+         animation: remplis 500ms 0ms both ;
      }
  }
  .coeur1 .far{

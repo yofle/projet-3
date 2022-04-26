@@ -246,7 +246,7 @@
   .Nouveau1 {
     position: absolute;
     z-index: 2;
-    top: 55%;
+    top: 820px;
     right: 1rem;
     background-color: #99E2D0;
     padding: 5px;
@@ -261,7 +261,7 @@
   .Nouveau2 {
     position: absolute;
     z-index: 2;
-    top: 72%;
+    top: 1070px;
     right: 1rem;
     background-color: #99E2D0;
     padding: 5px;
@@ -280,6 +280,14 @@
     font-size: 20px;
   }
 
+  @keyframes remplis {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
   .coeur .fas {
     color: #bc6fd7;
     padding-right: 10px;
@@ -290,6 +298,7 @@
   }
   .coeur .fas:hover {
     z-index: 1;
+    animation: remplis 500ms 0ms both;
   }
 
   .coeur .far {
@@ -322,6 +331,7 @@
   }
   .coeur1 .fas:hover {
     z-index: 1;
+    animation: remplis 500ms 0ms both;
   }
 
   .coeur1 .far {
@@ -689,7 +699,7 @@
   .Nouveau1 {
     position: absolute;
     z-index: 2;
-    top: 52%;
+    top: 777px;
     right: 1rem;
     background-color: #98e2cf;
     padding: 5px;
@@ -704,7 +714,7 @@
   .Nouveau2 {
     position: absolute;
     z-index: 2;
-    top: 52%;
+    top: 777px;
     right: 53%;
     background-color: #99E2D0;
     padding: 5px;
@@ -723,6 +733,14 @@
     font-size: 20px;
   }
 
+  @keyframes remplis {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
   .coeur .fas {
     color: #bc6fd7;
     padding-right: 10px;
@@ -733,6 +751,7 @@
   }
   .coeur .fas:hover {
     z-index: 1;
+    animation: remplis 500ms 0ms both;
   }
 
   .coeur .far {
@@ -765,6 +784,7 @@
   }
   .coeur1 .fas:hover {
     z-index: 1;
+    animation: remplis 500ms 0ms both;
   }
 
   .coeur1 .far {
@@ -1146,7 +1166,7 @@
   .Nouveau1 {
     position: absolute;
     z-index: 2;
-    top: 55%;
+    top: 820px;
     right: 1rem;
     background-color: #98e2cf;
     padding: 5px;
@@ -1161,7 +1181,7 @@
   .Nouveau2 {
     position: absolute;
     z-index: 2;
-    top: 55%;
+    top: 820px;
     right: 53%;
     background-color: #99E2D0;
     padding: 5px;
@@ -1180,6 +1200,14 @@
     font-size: 20px;
   }
 
+  @keyframes remplis {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
   .coeur .fas {
     color: #bc6fd7;
     padding-right: 10px;
@@ -1190,6 +1218,7 @@
   }
   .coeur .fas:hover {
     z-index: 1;
+    animation: remplis 500ms 0ms both;
   }
 
   .coeur .far {
@@ -1222,6 +1251,7 @@
   }
   .coeur1 .fas:hover {
     z-index: 1;
+    animation: remplis 500ms 0ms both;
   }
 
   .coeur1 .far {

@@ -98,16 +98,16 @@
 }
 .imglpdg{
   background-image:url("../images./restaurants./1.jpg");
-  height: 250px;
+  height: 400px;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
+  background-position: top;
 }
 .bigHeart{
   position: relative;
-  margin-top: -50px;
+  margin-top: -170px;
 }
-.heart{
+.coeur{
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -116,8 +116,40 @@
   background-color: #F2F2F2;
   border-radius: 40px 40px 0px 0px;
 }
-.fa-heart{
-  font-size: 20px;
+@keyframes remplis {
+  0%{
+      opacity: 0%;
+    }
+    100%{
+      opacity:100%
+    }
+}
+.coeur .fas{
+  color: #bc6fd7;
+  padding-right: 10px;
+  padding-top: 30px;
+  font-size: 25px;
+  position: absolute;
+  right: 1rem;
+  background-color: #F2F2F2;
+  border-radius: 0px 50px 0px 0px;
+  &:hover{
+      z-index: 1;
+      animation: remplis 500ms 0ms both;
+  }
+}
+.coeur .far{
+  color: black;
+  padding-right: 10px;
+  padding-top: 30px;
+  font-size: 25px;
+  position: absolute;
+  right: 1rem;
+  background-color:#F2F2F2;
+  border-radius: 0px 50px 0px 0px;
+  &:hover{
+      z-index: -1;
+  }
 }
 h1{
   margin-bottom: 0px;
@@ -131,7 +163,7 @@ h1{
 .Entrées h2::after{
   content: "";
     position: absolute;
-    top: 22.9rem;
+    top: 24.7rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -140,7 +172,7 @@ h1{
 .Plats h2::after{
   content: "";
     position: absolute;
-    top: 39.2rem;
+    top: 42.2rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -149,7 +181,7 @@ h1{
 .Desserts h2::after{
   content: "";
     position: absolute;
-    top: 55.5rem;
+    top: 59.7rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -163,6 +195,71 @@ h2{
 h3{
   margin: 0px;
   font-size: 15px;
+}
+@keyframes V{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
+.fa-check-circle{
+  font-size: 22px;
+  background: white;
+  color: #99E2D0;
+  border-radius: 100px 100px;
+
+}
+.apparition{
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1800ms both;
+  display: flex;
+  height: 60px ;
+  margin: 10px;
+  &:hover{
+    .validation{
+    animation: valid 500ms 0ms both ;
+    transform-origin: right 50%;
+    .fa-check-circle{
+      animation: V 1s 0ms both ;
+    }
+    }
+  }
+}
+@keyframes valid {
+  0%{
+    opacity: 0%;
+    transform: scaleX(0);
+  }
+  100%{
+    opacity:100%;
+    transform: scaleX(1);
+  }
+}
+.validation{
+  text-align: center;
+  width: 10%;
+  padding-top: 20px;
+  background-color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+  opacity: 0;
+}
+
+@keyframes menuE {
+  0%{
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+  50%{
+    opacity: 50%;
+  }
+  100%{
+    opacity:100%
+  }
 }
 .e1{
   display: flex ;
@@ -185,40 +282,20 @@ h3{
     justify-content: space-between;
   }
 .E1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .E2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .E3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .E4{
-    margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
+  width: 90%;
+  margin: 10px;
   }
 .Plats{
   padding-bottom: 20px;
@@ -240,31 +317,16 @@ h3{
   justify-content: space-between;
 }
 .P1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .P2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .P3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .Desserts{
   padding-bottom: 20px;
@@ -286,31 +348,16 @@ h3{
   justify-content: space-between;
 }
 .D1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .D2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .D3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .prix{
   font-weight: bold;
@@ -350,6 +397,7 @@ Footer p{
   margin-bottom: 10px;
   font-weight: bolder;
   font-family:"Shrikhand";
+  font-size: 20px;
 }
 .fa-utensils{
   color: white;
@@ -467,16 +515,16 @@ Footer p{
 }
 .imglpdg{
   background-image:url("../images./restaurants./1.jpg");
-  height: 250px;
+  height: 500px;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
+  background-position: top;
 }
 .bigHeart{
   position: relative;
-  margin-top: -50px;
+  margin-top: -170px;
 }
-.heart{
+.coeur{
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -485,8 +533,40 @@ Footer p{
   background-color: #F2F2F2;
   border-radius: 40px 40px 0px 0px;
 }
-.fa-heart{
-  font-size: 20px;
+@keyframes remplis {
+  0%{
+      opacity: 0%;
+    }
+    100%{
+      opacity:100%
+    }
+}
+.coeur .fas{
+  color: #bc6fd7;
+  padding-right: 10px;
+  padding-top: 30px;
+  font-size: 25px;
+  position: absolute;
+  right: 1rem;
+  background-color: #F2F2F2;
+  border-radius: 0px 50px 0px 0px;
+  &:hover{
+      z-index: 1;
+      animation: remplis 500ms 0ms both;
+  }
+}
+.coeur .far{
+  color: black;
+  padding-right: 10px;
+  padding-top: 30px;
+  font-size: 25px;
+  position: absolute;
+  right: 1rem;
+  background-color:#F2F2F2;
+  border-radius: 0px 50px 0px 0px;
+  &:hover{
+      z-index: -1;
+  }
 }
 h1{
   margin-bottom: 0px;
@@ -500,7 +580,7 @@ h1{
 .Entrées h2::after{
   content: "";
     position: absolute;
-    top: 22.9rem;
+    top: 31rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -509,7 +589,7 @@ h1{
 .Plats h2::after{
   content: "";
     position: absolute;
-    top: 39.2rem;
+    top: 48.5rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -518,7 +598,7 @@ h1{
 .Desserts h2::after{
   content: "";
     position: absolute;
-    top: 55.6rem;
+    top: 66rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -532,6 +612,71 @@ h2{
 h3{
   margin: 0px;
   font-size: 15px;
+}
+@keyframes V{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
+.fa-check-circle{
+  font-size: 22px;
+  background: white;
+  color: #99E2D0;
+  border-radius: 100px 100px;
+
+}
+.apparition{
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1800ms both;
+  display: flex;
+  height: 60px ;
+  margin: 10px;
+  &:hover{
+    .validation{
+    animation: valid 500ms 0ms both ;
+    transform-origin: right 50%;
+    .fa-check-circle{
+      animation: V 1s 0ms both ;
+    }
+    }
+  }
+}
+@keyframes valid {
+  0%{
+    opacity: 0%;
+    transform: scaleX(0);
+  }
+  100%{
+    opacity:100%;
+    transform: scaleX(1);
+  }
+}
+.validation{
+  text-align: center;
+  width: 10%;
+  padding-top: 20px;
+  background-color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+  opacity: 0;
+}
+
+@keyframes menuE {
+  0%{
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+  50%{
+    opacity: 50%;
+  }
+  100%{
+    opacity:100%
+  }
 }
 .e1{
   display: flex ;
@@ -554,40 +699,20 @@ h3{
     justify-content: space-between;
   }
 .E1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .E2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .E3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .E4{
-    margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
+  width: 90%;
+  margin: 10px;
   }
 .Plats{
   padding-bottom: 20px;
@@ -609,31 +734,16 @@ h3{
   justify-content: space-between;
 }
 .P1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .P2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .P3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .Desserts{
   padding-bottom: 20px;
@@ -655,31 +765,16 @@ h3{
   justify-content: space-between;
 }
 .D1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .D2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .D3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .prix{
   font-weight: bold;
@@ -719,6 +814,7 @@ Footer p{
   margin-bottom: 10px;
   font-weight: bolder;
   font-family:"Shrikhand";
+  font-size: 20px;
 }
 .fa-utensils{
   color: white;
@@ -836,16 +932,16 @@ Footer p{
 }
 .imglpdg{
   background-image:url("../images./restaurants./1.jpg");
-  height: 250px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
 }
 .bigHeart{
   position: relative;
-  margin-top: -50px;
+  margin-top: -40px;
 }
-.heart{
+.coeur{
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -854,8 +950,40 @@ Footer p{
   background-color: #F2F2F2;
   border-radius: 40px 40px 0px 0px;
 }
-.fa-heart{
-  font-size: 20px;
+@keyframes remplis {
+  0%{
+      opacity: 0%;
+    }
+    100%{
+      opacity:100%
+    }
+}
+.coeur .fas{
+  color: #bc6fd7;
+  padding-right: 10px;
+  padding-top: 30px;
+  font-size: 25px;
+  position: absolute;
+  right: 1rem;
+  background-color: #F2F2F2;
+  border-radius: 0px 50px 0px 0px;
+  &:hover{
+      z-index: 1;
+      animation: remplis 500ms 0ms both;
+  }
+}
+.coeur .far{
+  color: black;
+  padding-right: 10px;
+  padding-top: 30px;
+  font-size: 25px;
+  position: absolute;
+  right: 1rem;
+  background-color:#F2F2F2;
+  border-radius: 0px 50px 0px 0px;
+  &:hover{
+      z-index: -1;
+  }
 }
 h1{
   margin-bottom: 0px;
@@ -869,7 +997,7 @@ h1{
 .Entrées h2::after{
   content: "";
     position: absolute;
-    top: 22.9rem;
+    top: 45.5rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -878,7 +1006,7 @@ h1{
 .Plats h2::after{
   content: "";
     position: absolute;
-    top: 39.2rem;
+    top: 62.8rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -887,7 +1015,7 @@ h1{
 .Desserts h2::after{
   content: "";
     position: absolute;
-    top: 55.5rem;
+    top:80.3rem;
     left: 0.7rem;
     height: 0.20rem;
     width: 2.5rem;
@@ -901,6 +1029,71 @@ h2{
 h3{
   margin: 0px;
   font-size: 15px;
+}
+@keyframes V{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
+.fa-check-circle{
+  font-size: 22px;
+  background: white;
+  color: #99E2D0;
+  border-radius: 100px 100px;
+
+}
+.apparition{
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 3px 3px #cdd4dd;
+  animation: menuE 1s 1800ms both;
+  display: flex;
+  height: 60px ;
+  margin: 10px;
+  &:hover{
+    .validation{
+    animation: valid 500ms 0ms both ;
+    transform-origin: right 50%;
+    .fa-check-circle{
+      animation: V 1s 0ms both ;
+    }
+    }
+  }
+}
+@keyframes valid {
+  0%{
+    opacity: 0%;
+    transform: scaleX(0);
+  }
+  100%{
+    opacity:100%;
+    transform: scaleX(1);
+  }
+}
+.validation{
+  text-align: center;
+  width: 10%;
+  padding-top: 20px;
+  background-color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+  opacity: 0;
+}
+
+@keyframes menuE {
+  0%{
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+  50%{
+    opacity: 50%;
+  }
+  100%{
+    opacity:100%
+  }
 }
 .e1{
   display: flex ;
@@ -923,40 +1116,20 @@ h3{
     justify-content: space-between;
   }
 .E1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .E2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .E3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .E4{
-    margin: 10px;
-    border: 1px white solid;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    padding-right: 15px;
-    box-shadow: 3px 3px 3px #cdd4dd;
+  width: 90%;
+  margin: 10px;
   }
 .Plats{
   padding-bottom: 20px;
@@ -978,31 +1151,16 @@ h3{
   justify-content: space-between;
 }
 .P1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .P2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .P3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .Desserts{
   padding-bottom: 20px;
@@ -1024,31 +1182,16 @@ h3{
   justify-content: space-between;
 }
 .D1{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .D2{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .D3{
+  width: 90%;
   margin: 10px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 15px;
-  box-shadow: 3px 3px 3px #cdd4dd;
 }
 .prix{
   font-weight: bold;
@@ -1088,6 +1231,7 @@ Footer p{
   margin-bottom: 10px;
   font-weight: bolder;
   font-family:"Shrikhand";
+  font-size: 20px;
 }
 .fa-utensils{
   color: white;

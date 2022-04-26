@@ -117,6 +117,14 @@
   background-color: #F2F2F2;
   border-radius: 40px 40px 0px 0px;
 }
+@keyframes remplis {
+  0%{
+      opacity: 0%;
+    }
+    100%{
+      opacity:100%
+    }
+}
 .coeur .fas{
   color: #bc6fd7;
   padding-right: 10px;
@@ -128,6 +136,7 @@
   border-radius: 0px 50px 0px 0px;
   &:hover{
       z-index: 1;
+      animation: remplis 500ms 0ms both;
   }
 }
 .coeur .far{
@@ -525,6 +534,14 @@ Footer p{
   background-color: #F2F2F2;
   border-radius: 40px 40px 0px 0px;
 }
+@keyframes remplis {
+  0%{
+      opacity: 0%;
+    }
+    100%{
+      opacity:100%
+    }
+}
 .coeur .fas{
   color: #bc6fd7;
   padding-right: 10px;
@@ -536,6 +553,7 @@ Footer p{
   border-radius: 0px 50px 0px 0px;
   &:hover{
       z-index: 1;
+      animation: remplis 500ms 0ms both;
   }
 }
 .coeur .far{
@@ -933,6 +951,14 @@ Footer p{
   background-color: #F2F2F2;
   border-radius: 40px 40px 0px 0px;
 }
+@keyframes remplis {
+  0%{
+      opacity: 0%;
+    }
+    100%{
+      opacity:100%
+    }
+}
 .coeur .fas{
   color: #bc6fd7;
   padding-right: 10px;
@@ -944,6 +970,7 @@ Footer p{
   border-radius: 0px 50px 0px 0px;
   &:hover{
       z-index: 1;
+      animation: remplis 500ms 0ms both;
   }
 }
 .coeur .far{
