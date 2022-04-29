@@ -429,9 +429,11 @@
     margin-bottom: 8px;
   }
 
-  .ohmyfood {
-    margin-bottom: 20px;
-    font-family: "Shrikhand", cursive;
+  .omf {
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-family: "Shrikhand";
+    font-size: 20px;
   }
 
   .fa-utensils {
@@ -896,9 +898,10 @@
     margin-bottom: 8px;
   }
 
-  .ohmyfood {
+  .omf {
     margin-bottom: 20px;
     font-family: "Shrikhand";
+    font-size: 20px;
   }
 
   .fa-utensils {
@@ -1363,9 +1366,10 @@
     margin-bottom: 8px;
   }
 
-  .ohmyfood {
+  .omf {
     margin-bottom: 20px;
     font-family: "Shrikhand";
+    font-size: 20px;
   }
 
   .fa-utensils {
