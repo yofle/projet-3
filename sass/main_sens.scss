@@ -80,7 +80,6 @@
     margin-top: 5px;
     font-size: 14px;
   }
-
 .entête{
     display: flex;
     align-items: center;
@@ -137,6 +136,7 @@
   &:hover{
       z-index: 1;
       animation: remplis 500ms 0ms both;
+      cursor: pointer;
   }
 }
 .coeur .far{
@@ -196,7 +196,19 @@ h2{
 h3{
   margin: 0px;
   font-size: 15px;
+  text-overflow : ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
 }
+.petitspoints
+  {
+    text-overflow :ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
+  }
+
 @keyframes V{
   0%{
     transform: rotate(0deg);
@@ -239,11 +251,12 @@ h3{
   100%{
     opacity:100%;
     transform: scaleX(1);
+    width: 20%;
   }
 }
 .validation{
   text-align: center;
-  width: 10%;
+  width: 0%;
   padding-top: 20px;
   background-color: #99E2D0;
   border-radius: 0px 10px 10px 0px;
@@ -554,6 +567,7 @@ Footer p{
   &:hover{
       z-index: 1;
       animation: remplis 500ms 0ms both;
+      cursor: pointer;
   }
 }
 .coeur .far{
@@ -613,7 +627,18 @@ h2{
 h3{
   margin: 0px;
   font-size: 15px;
+  text-overflow : ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
 }
+.petitspoints
+  {
+    text-overflow :ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
+  }
 @keyframes V{
   0%{
     transform: rotate(0deg);
@@ -656,6 +681,7 @@ h3{
   100%{
     opacity:100%;
     transform: scaleX(1);
+    width: 20%;
   }
 }
 .validation{
@@ -904,6 +930,7 @@ Footer p{
     background-color: #F2F2F2;
     padding-bottom: 30px;
     border-radius: 40px 40px 0px 0px;
+    min-Height: 60vh;
   }
 
   a:link {
@@ -937,6 +964,7 @@ Footer p{
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  min-Height: 40vh;
 }
 .bigHeart{
   position: relative;
@@ -971,6 +999,7 @@ Footer p{
   &:hover{
       z-index: 1;
       animation: remplis 500ms 0ms both;
+      cursor: pointer;
   }
 }
 .coeur .far{
@@ -1030,7 +1059,18 @@ h2{
 h3{
   margin: 0px;
   font-size: 15px;
+  text-overflow : ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
 }
+.petitspoints
+  {
+    text-overflow :ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
+  }
 @keyframes V{
   0%{
     transform: rotate(0deg);
@@ -1073,6 +1113,7 @@ h3{
   100%{
     opacity:100%;
     transform: scaleX(1);
+    width: 20%;
   }
 }
 .validation{

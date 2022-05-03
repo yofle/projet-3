@@ -229,6 +229,7 @@
     background-color: #F2F2F2;
     padding-top: 20px;
     padding-bottom: 30px;
+    min-Height: 50vh;
   }
 
   .Restaurants h3 {
@@ -299,6 +300,7 @@
   .coeur .fas:hover {
     z-index: 1;
     animation: remplis 500ms 0ms both;
+    cursor: pointer;
   }
 
   .coeur .far {
@@ -332,6 +334,7 @@
   .coeur1 .fas:hover {
     z-index: 1;
     animation: remplis 500ms 0ms both;
+    cursor: pointer;
   }
 
   .coeur1 .far {
@@ -684,6 +687,7 @@
     background-color: #F2F2F2;
     padding-top: 20px;
     padding-bottom: 30px;
+    min-Height: 60vh;
   }
 
   .Restaurants h3 {
@@ -754,6 +758,7 @@
   .coeur .fas:hover {
     z-index: 1;
     animation: remplis 500ms 0ms both;
+    cursor: pointer;
   }
 
   .coeur .far {
@@ -787,6 +792,7 @@
   .coeur1 .fas:hover {
     z-index: 1;
     animation: remplis 500ms 0ms both;
+    cursor: pointer;
   }
 
   .coeur1 .far {
@@ -1152,6 +1158,7 @@
     background-color: #F2F2F2;
     padding-top: 20px;
     padding-bottom: 30px;
+    min-Height: 70vh;
   }
 
   .Restaurants h3 {
@@ -1222,6 +1229,7 @@
   .coeur .fas:hover {
     z-index: 1;
     animation: remplis 500ms 0ms both;
+    cursor: pointer;
   }
 
   .coeur .far {
@@ -1255,6 +1263,7 @@
   .coeur1 .fas:hover {
     z-index: 1;
     animation: remplis 500ms 0ms both;
+    cursor: pointer;
   }
 
   .coeur1 .far {

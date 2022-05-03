@@ -136,6 +136,7 @@
   &:hover{
       z-index: 1;
       animation: remplis 500ms 0ms both;
+      cursor: pointer;
   }
 }
 .coeur .far{
@@ -195,7 +196,18 @@ h2{
 h3{
   margin: 0px;
   font-size: 15px;
+  text-overflow : ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
 }
+.petitspoints
+  {
+    text-overflow :ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
+  }
 @keyframes V{
   0%{
     transform: rotate(0deg);
@@ -238,6 +250,7 @@ h3{
   100%{
     opacity:100%;
     transform: scaleX(1);
+    width: 20%;
   }
 }
 .validation{
@@ -553,6 +566,7 @@ Footer p{
   &:hover{
       z-index: 1;
       animation: remplis 500ms 0ms both;
+      cursor: pointer;
   }
 }
 .coeur .far{
@@ -612,7 +626,18 @@ h2{
 h3{
   margin: 0px;
   font-size: 15px;
+  text-overflow : ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
 }
+.petitspoints
+  {
+    text-overflow :ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
+  }
 @keyframes V{
   0%{
     transform: rotate(0deg);
@@ -655,6 +680,7 @@ h3{
   100%{
     opacity:100%;
     transform: scaleX(1);
+    width: 20%;
   }
 }
 .validation{
@@ -837,6 +863,7 @@ Footer p{
 {
   html {
     font-family:"Roboto", "Arial";
+    height: 100%;
   }
   body{
     margin: 0;
@@ -903,6 +930,7 @@ Footer p{
     background-color: #F2F2F2;
     padding-bottom: 30px;
     border-radius: 40px 40px 0px 0px;
+    min-Height: 60vh;
   }
 
   a:link {
@@ -936,6 +964,7 @@ Footer p{
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  min-Height: 40vh;
 }
 .bigHeart{
   position: relative;
@@ -970,6 +999,7 @@ Footer p{
   &:hover{
       z-index: 1;
       animation: remplis 500ms 0ms both;
+      cursor: pointer;
   }
 }
 .coeur .far{
@@ -1029,7 +1059,18 @@ h2{
 h3{
   margin: 0px;
   font-size: 15px;
+  text-overflow : ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
 }
+.petitspoints
+  {
+    text-overflow :ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
+  }
 @keyframes V{
   0%{
     transform: rotate(0deg);
@@ -1072,6 +1113,7 @@ h3{
   100%{
     opacity:100%;
     transform: scaleX(1);
+    width: 20%;
   }
 }
 .validation{

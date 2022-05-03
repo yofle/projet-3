@@ -220,6 +220,7 @@ h3{
     background-color:#F2F2F2;
     padding-top: 20px;
     padding-bottom: 30px;
+    min-Height: 50vh;
 }
 .Restaurants h3{
     color: black;
@@ -283,6 +284,7 @@ h3{
     &:hover{
         z-index: 1;
         animation: remplis 500ms 0ms both;
+        cursor: pointer;
     }
 }
 .coeur .far{
@@ -313,6 +315,7 @@ h3{
     &:hover{
         z-index: 1;
         animation: remplis 500ms 0ms both;
+        cursor: pointer;
     }
 }
 .coeur1 .far{
@@ -639,6 +642,7 @@ h3{
     background-color:#F2F2F2;
     padding-top: 20px;
     padding-bottom: 30px;
+    min-Height: 60vh;
 }
 .Restaurants h3{
     color: black;
@@ -702,6 +706,7 @@ h3{
     &:hover{
         z-index: 1;
         animation: remplis 500ms 0ms both;
+        cursor: pointer;
     }
 }
 .coeur .far{
@@ -732,6 +737,7 @@ h3{
     &:hover{
         z-index: 1;
         animation: remplis 500ms 0ms both;
+        cursor: pointer;
     }
 }
 .coeur1 .far{
@@ -870,7 +876,7 @@ Footer p{
      }
  body{
      margin: 0;
- }
+    }
  .chargement{
      &-loader{
         margin:auto;
@@ -1069,6 +1075,7 @@ Footer p{
      background-color:#F2F2F2;
      padding-top: 20px;
      padding-bottom: 30px;
+     min-Height: 70vh;
  }
  .Restaurants h3{
      color: black;
@@ -1132,6 +1139,7 @@ Footer p{
      &:hover{
          z-index: 1;
          animation: remplis 500ms 0ms both ;
+         cursor: pointer;
      }
  }
  .coeur .far{
@@ -1162,6 +1170,7 @@ Footer p{
      &:hover{
          z-index: 1;
          animation: remplis 500ms 0ms both ;
+         cursor: pointer;
      }
  }
  .coeur1 .far{
